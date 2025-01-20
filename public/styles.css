@@ -1,0 +1,1255 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografía base */
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* ----- Barra superior de contacto ----- */
+  .top-bar {
+    background-color: #f00; /* Rojo principal */
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .top-bar .social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  /* ----- Encabezado principal ----- */
+  .main-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Barra de búsqueda */
+  .search-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container input {
+    width: 250px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-container .search-btn {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* Íconos de cabecera */
+  .header-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+  }
+  
+  /* ----- Menú de navegación ----- */
+  .nav-menu {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    display: inline-block;
+    font-weight: 600;
+  }
+  
+  .nav-menu a:hover {
+    color: #f00;
+  }
+  
+  /* ----- Banner principal (Hero) ----- */
+  .hero-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('banner-forklift.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .hero-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero-content {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-phone {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    display: inline-flex;
+    gap: 10px;
+  }
+  
+  .btn-whatsapp, .btn-precios {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .btn-whatsapp:hover,
+  .btn-precios:hover {
+    background-color: #c00;
+  }
+  
+  /* ----- Sección de productos (primer ejemplo) ----- */
+  .product-section {
+    display: flex;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    gap: 20px;
+    padding: 50px;
+  }
+  .product-section-others{
+    display: flex;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    gap: 20px;
+    padding: 50px;
+  }
+  .product-section-others h3, .product-section-others p{
+    font-weight: 300;
+  }
+  .product-section-others p{
+    text-align: left;
+  }
+  .product-card {
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+  }
+
+  .product-card img:hover{
+    transform: scale(1.1);
+  }
+  
+  .product-card h3 {
+    color: #000;
+    margin-bottom: 5px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+  
+  .product-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn-vermas {
+    background-color: #E9E9E9;
+    font-family: "Roboto", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    fill: #000000;
+    color: #000000;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 24px;
+    text-align: center;
+    transition: all .3s;
+    text-decoration: none;
+  }
+  
+  .btn-vermas:hover {
+    color: #fff;
+    transform: scale(1.1);
+    background-color: #c00;
+  }
+  
+  /* ----- Sección de entrega inmediata ----- */
+  .immediate-delivery {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .immediate-delivery h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #333;
+    font-weight: 300;
+  }
+  
+  .immediate-delivery h2 a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 900;
+  }
+  
+  .immediate-delivery .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-item {
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0px;
+    position: relative;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+  }
+  
+  .negociable-badge {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #00c853; /* Verde */
+    color: #fff;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .product-item h3 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #0b0;
+    font-weight: 700;
+  }
+  
+  /* ----- Sección oferta: texto + formulario + video ----- */
+  .offer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .offer-left {
+    flex: 1 1 600px;
+  }
+  
+  .offer-left h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .offer-left p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .offer-left strong {
+    font-weight: bold;
+  }
+  
+  .advantages {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .advantages li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .advantages li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #f00;
+  }
+  
+  .video-container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+  }
+  
+  /* Lado derecho: redes + formulario */
+  .offer-right {
+    flex: 1 1 400px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Redes sociales arriba del formulario */
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  
+  .social-media span {
+    font-weight: 600;
+  }
+  
+  .social-media a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Formulario de contacto */
+  .enquiry-form {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .form-group.full-width {
+    flex: 1 1 100%;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  
+  /* reCAPTCHA placeholder */
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Botón enviar */
+  .btn-submit {
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .btn-submit:hover {
+    background-color: #005bb5;
+  }
+  
+  /* ----- Ícono flotante de WhatsApp ----- */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+  }
+  
+  .whatsapp-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* ----- Footer ----- */
+  .site-footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* ----- Sección: ¿Por Qué Los Montacargas RTE? ----- */
+.why-rte {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .why-rte h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #111;
+  }
+  
+  .why-rte p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .why-rte .reviews-link {
+    color: #f00;  /* Rojo principal */
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .why-rte .reviews-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenedor de las características (rapidez, confianza, crédito) */
+  .why-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  /* Cada "feature" es una columna */
+  .feature-item {
+    max-width: 250px;
+  }
+  
+  .feature-icon {
+    margin-bottom: 10px;
+  }
+  
+  .feature-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.1rem;
+    color: #f00;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .feature-item p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    color: #555;
+  }
+  
+  /* Logos de marcas */
+  .brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .brand-logos img {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+/* BANNER: ARRENDAMIENTO Y CRÉDITO */
+.arrendamiento-banner {
+    position: relative;
+    height: 300px;
+    background: url('banner-arrendamiento.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Oscurecer o semitransparentar la imagen si deseas mejor legibilidad */
+  /*.arrendamiento-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }*/
+  
+  .arrendamiento-content {
+    position: relative; /* Para quedar por encima del pseudo-elemento overlay si lo usas */
+  }
+  
+  .arrendamiento-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .arrendamiento-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-comprar-ahora {
+    display: inline-block;
+    background-color: #f00; /* Rojo principal */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .btn-comprar-ahora:hover {
+    background-color: #c00;
+  }
+  
+  /* SECCIÓN DE PRODUCTOS POR CATEGORÍA */
+  .product-grid-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-grid-section h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .product-grid-section h3 a {
+    color: #f00;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .product-grid-section h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Lista de productos: secciones horizontales de tarjetas */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+
+  
+  /* Si deseas tarjetas más anchas, agrega la clase "wide" */
+  .product-item.wide {
+    width: 200px;
+  }
+  
+  /* Título del producto */
+  .product-item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Precio en verde */
+  .product-price {
+    font-size: 1rem;
+    color: #0b0;
+    font-weight: 700;
+  }
+    
+  /* ----- SECCIÓN: COMPRA TU MONTACARGAS EN 3 PASOS ----- */
+.three-steps {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .three-steps h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #111;
+  }
+  
+  .three-steps p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Contenedor de pasos */
+  .steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Cada "step-item" es una columna */
+  .step-item {
+    flex: 1 1 250px;
+    max-width: 320px;
+    text-align: center;
+  }
+  
+  /* Imagen de cada paso */
+  .step-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px; /* opcional */
+  }
+  
+  /* Título y texto de cada paso */
+  .step-item h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #111;
+    font-weight: 600;
+  }
+  
+  .step-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+  }
+  
+  /* ----- SECCIÓN: BANNER MONTACARGAS MÉXICO ----- */
+  .mexico-banner {
+    position: relative;
+    background: url('banner-montacargas-mexico.jpg') center center / cover no-repeat;
+    height: 300px; /* Ajusta a conveniencia */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Capa de oscurecimiento opcional */
+  .banner-overlay {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4); /* Ajusta la opacidad si quieres */
+    z-index: 0;
+  }
+  
+  .banner-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* Asegura que el contenido quede sobre la overlay */
+  }
+  
+  .banner-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .banner-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Botón en el banner */
+  .btn-comprar-mexico {
+    background-color: #f00;  /* Rojo principal */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .btn-comprar-mexico:hover {
+    background-color: #c00;
+  }
+  
+  /* ----- RESPONSIVIDAD BÁSICA (OPCIONAL) ----- */
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step-item {
+      max-width: 500px;
+    }
+  
+    .mexico-banner {
+      height: 200px;
+    }
+    
+    .banner-content h2 {
+      font-size: 1.4rem;
+    }
+    
+    .banner-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Sección de montacargas (combustión/eléctrico) */
+.forklift-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  /* Contenedor general de cada bloque (imagen-texto o texto-imagen) */
+  .forklift-info-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center; /* Centra verticalmente si hay diferencia de altura */
+  }
+  
+  /* Para invertir el orden (texto a la izquierda, imagen a la derecha) */
+  .forklift-info-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Contenedor de la imagen */
+  .forklift-image {
+    flex: 1 1 400px;
+  }
+  
+  /* La imagen en sí misma */
+  .forklift-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px; /* Borde redondeado opcional */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+  }
+  
+  /* Contenedor del texto */
+  .forklift-description {
+    flex: 1 1 400px;
+  }
+  
+  /* Título del bloque */
+  .forklift-description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Párrafo informativo */
+  .forklift-description p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #555;
+  }
+  
+  /* Listas de puntos */
+  .forklift-description ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  /* Separador visual entre bloques (opcional) */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  /* ----- RESPONSIVIDAD BÁSICA (opcional) ----- */
+  @media (max-width: 768px) {
+    .forklift-info-block,
+    .forklift-info-block.reverse {
+      flex-direction: column; /* Imagen y texto uno encima del otro */
+      text-align: center;
+    }
+  
+    .forklift-image, .forklift-description {
+      flex: 1 1 100%;
+    }
+  
+    .forklift-description ul {
+      list-style-position: inside;
+      margin-left: 0;
+    }
+  }
+/* SECCIÓN DISTRIBUIDORES / POR QUÉ COMPRAR */
+.distributor-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  /* Contenedor principal de cada bloque (imagen-texto) */
+  .distributor-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center; /* Alinea verticalmente si difieren las alturas */
+  }
+  
+  /* Invertir el orden para el segundo bloque (texto a la izquierda, imagen a la derecha) */
+  .distributor-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Contenedor de la imagen */
+  .distributor-image {
+    flex: 1 1 400px; /* Se expande mínimo hasta ~400px, ajusta a tu gusto */
+  }
+  
+  /* Ajustes de la imagen en sí */
+  .distributor-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px; /* Esquinas redondeadas opcionales */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contenedor de texto */
+  .distributor-description {
+    flex: 1 1 400px;
+  }
+  
+  /* Título del bloque */
+  .distributor-description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Párrafos */
+  .distributor-description p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Listas con viñetas */
+  .distributor-description ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Fila de logos (ejemplo) */
+  .logos-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .logos-row img {
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Separador horizontal (opcional) */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  /* ----- Responsividad básica (opcional) ----- */
+  @media (max-width: 768px) {
+    .distributor-block,
+    .distributor-block.reverse {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .distributor-description {
+      flex: 1 1 100%;
+    }
+    
+    .distributor-image {
+      flex: 1 1 100%;
+    }
+    
+    .logos-row {
+      justify-content: center;
+    }
+  }
+/* ===== SECCIÓN SUPERIOR OSCURA ===== */
+.footer-top {
+    background-color: #333; 
+    color: #fff;
+    padding: 30px 20px;
+  }
+  
+  .footer-top-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Lado izquierdo: "¿Quiénes Somos?" */
+  .footer-about {
+    flex: 1 1 400px;
+  }
+  
+  .footer-about h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-about p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  
+  .footer-about ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    color: #fff;
+  }
+  
+  .footer-about ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-about ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff0000; /* Rojo o el color que gustes para la viñeta */
+  }
+  
+  /* Lado derecho: Mapa y redes */
+  .footer-map {
+    flex: 1 1 400px;
+  }
+  
+  .footer-map h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .footer-map .map-link {
+    color: #ff0000; /* Enlace rojo */
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .footer-map .map-link:hover {
+    text-decoration: underline;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Borde del contenedor del mapa (opcional) */
+  }
+  
+  .footer-map p {
+    margin-bottom: 5px;
+    color: #ddd;
+  }
+  
+  /* Redes (íconos) en la sección superior */
+  .footer-map .social-media,
+  .footer-about .social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .footer-map .social-media img,
+  .footer-about .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* ===== PIE DE PÁGINA (FOOTER) ===== */
+  .site-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Contenedor de columnas del footer */
+  .footer-columns {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .footer-col {
+    flex: 1 1 200px;
+    min-width: 200px; 
+  }
+  
+  /* Columna 1: Marca, redes, descripción */
+  .footer-brand .footer-logos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand .footer-logos img {
+    max-height: 50px;
+    width: auto;
+  }
+  
+  .footer-brand h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  /* Redes sociales en el footer */
+  .footer-brand .social-media {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Columna 2: Productos */
+  .footer-products h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-products ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  .footer-products li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-products li a {
+    color: #ccc;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-products li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-products li span {
+    color: #f66; /* Color para el precio */
+    font-weight: bold;
+  }
+  
+  .footer-products p a {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  .footer-products p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Columna 3: Contacto */
+  .footer-contact h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-contact p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .payment-methods {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-methods img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .footer-contact select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #777;
+    background-color: #333;
+    color: #ccc;
+  }
+  
+  /* Fila final */
+  .footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* ===== RESPONSIVIDAD BÁSICA (OPCIONAL) ===== */
+  @media (max-width: 768px) {
+    .footer-top-content,
+    .footer-columns {
+      flex-direction: column;
+    }
+  
+    .footer-about,
+    .footer-map,
+    .footer-col {
+      flex: 1 1 100%;
+    }
+  
+    .footer-brand .footer-logos {
+      justify-content: center;
+    }
+  
+    .payment-methods {
+      justify-content: center;
+    }
+  }
+      

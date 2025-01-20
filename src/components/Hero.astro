@@ -1,0 +1,119 @@
+---
+import hendo from "../assets/img/hendo_montacargas_rte.webp";
+---
+
+<section id="hero" style={`background-image: url(${hendo.src});`}>
+	<div id="background-overlay"></div>
+	<div class="row">
+		<div class="col-6 container-hero">
+			<h3 class="title_mantacargas"><b>LOS MONTACARGAS RTE</b></h3>
+			<h3 class="title_mantacargas">No.1 EN VENTAS</h3>
+			<h3 class="title_mantacargas-subtitle">
+				<b>VENTA DE MONTACARGAS EN MÉXICO</b>
+			</h3>
+
+			<div class="row d-flex star-container">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+			<hr
+				style="border: none; border-top: 3px solid white; width: 50%; margin: 0;"
+			/>
+			<h4><i class="fa fa-phone"></i> 81 1550 3100</h4>
+			<div class="hero-buttons">
+				<a href="#" class="btn-whatsapp">WHATSAPP</a>
+				<a href="#" class="btn-precios">PRECIOS</a>
+			</div>
+		</div>
+		<div class="col-6">50%</div>
+	</div>
+</section>
+
+<style is:inline>
+	.hero-buttons a {
+		font-weight: 500 !important;
+		padding: 10px 30px !important;
+		font-size: 16px !important;
+		transition: all 0.3s ease;
+	}
+	.btn-precios {
+		background-color: transparent;
+		border: 2px solid #fff;
+	}
+	.btn-whatsapp:hover {
+		background-color: #b10202;
+		color: #fffffffa;
+		border-color: #b10202;
+		transform: scale(1.1);
+	}
+	.btn-precios:hover {
+		background-color: #fff;
+		color: #000;
+		border-color: #fff;
+		transform: scale(1.1);
+	}
+	.star-container {
+		width: 50%;
+		justify-content: space-evenly;
+	}
+	h3,
+	h4 {
+		padding: 0;
+		margin: 0;
+	}
+	.hero-buttons {
+		width: 50%;
+		justify-content: space-evenly;
+	}
+	#background-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		--background-overlay: "";
+		background-image: linear-gradient(92deg, #000000 9%, #ffffff00 100%);
+	}
+	h4 {
+		color: #ffffff;
+	}
+	.row {
+		--bs-gutter-x: 0 !important;
+	}
+	.container-hero {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		gap: 20px;
+	}
+	.fa-star {
+		width: auto;
+		color: yellow;
+	}
+	b {
+		font-family: "Roboto-Bold", sans-serif;
+	}
+	#hero {
+		position: relative;
+		background-color: #ffffff;
+		background-position: 0px -210px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.title_mantacargas {
+		font-size: 2.5em;
+		letter-spacing: -2px;
+		color: #ffffff;
+	}
+	.title_mantacargas-subtitle {
+		letter-spacing: -2px;
+		color: #ffffff;
+	}
+</style>
