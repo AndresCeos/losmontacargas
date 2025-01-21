@@ -16,7 +16,7 @@ import NavMenu from "./NavMenu.astro";
 <section id="container-header-content">
 	<div class="container">
 		<div class="row">
-			<div class="col-2 col-content">
+			<div class="col-2 col-content col-logo">
 				<a href="/">
 					<img
 						src={logo.src}
@@ -26,7 +26,7 @@ import NavMenu from "./NavMenu.astro";
 				</a>
 			</div>
 			<div
-				class="col-9 d-flex align-items-center"
+				class="col-9 d-flex align-items-center col-search"
 				style="padding-left: 0px;"
 			>
 				<div class="search-form">
@@ -43,7 +43,7 @@ import NavMenu from "./NavMenu.astro";
 					</div>
 				</div>
 			</div>
-			<div class="col-1 nav-conteiner">
+			<div class="col-1 nav-conteiner col-menu" >
 				<nav class="navbar navbar-light bg-light nav-bar-movil">
 					<div class="container-fluid">
 					  <button
@@ -65,7 +65,6 @@ import NavMenu from "./NavMenu.astro";
 					aria-labelledby="offcanvasMenuLabel"
 				  >
 					<div class="offcanvas-header">
-					  <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
 					  <button
 						type="button"
 						class="btn-close text-reset"
@@ -114,7 +113,7 @@ import NavMenu from "./NavMenu.astro";
 	}
 	#container-header-content {
 		z-index: 20;
-		height: 110px !important;
+		height: 110px;
 		background-color: rgba(255, 255, 255, 0.9);
 	}
 	.input-search {

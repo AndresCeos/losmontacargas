@@ -1519,7 +1519,7 @@
     }
 
     .nav-link, .offcanvas-title{
-      font-size: 30px;
+      font-size: 60px;
       text-align: center;
       width: 100%;
     }
@@ -1531,7 +1531,7 @@
       background-color: #ff1414;
     }
     .btn-close{
-      font-size: 30px;
+      font-size: 50px;
     }
 
     .social-media span{
@@ -1617,5 +1617,47 @@
     }
     .hero-buttons a{
       font-size: 30px !important;
+    }
+
+    #content-html{
+      font-size: 60px;
+      line-height: initial !important;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    #container-header-content{
+      height: auto !important;
+    }
+
+    #container-header-content img{
+      max-width: 500px;
+    }
+    .col-logo{
+      width: 50%;
+    }
+
+    .col-search{
+      order: 3;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .col-search input{
+      font-size: 45px;
+      padding: 10px;
+    }
+    .col-search i{
+      font-size: 45px;
+      padding: 10px;
+    }
+
+    .col-menu{
+      width: 50%;
+      justify-content: right;
+      order: 2;
+    }
+    .nav-bar-movil i{
+      font-size: 100px;
     }
   }
