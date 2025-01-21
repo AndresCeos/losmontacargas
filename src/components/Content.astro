@@ -189,11 +189,11 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     </div>
 
     <!-- Formulario de contacto/cotización -->
-    <form class="enquiry-form">
+    <form class="enquiry-form" id="miFormulario">
       <div class="form-row">
         <div class="form-group">
           <label>Nombre *</label>
-          <input type="text" placeholder="Nombre..." required />
+          <input type="text" id="from_name" name="from_name" placeholder="Nombre..." required />
         </div>
         <div class="form-group">
           <label>Correo electrónico *</label>
@@ -201,6 +201,8 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
             type="email"
             placeholder="Ej: ventas@losmontacargas.mx"
             required
+            id="from_email"
+            name="from_email"
           />
         </div>
       </div>
@@ -208,11 +210,12 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       <div class="form-row">
         <div class="form-group">
           <label>Whatsapp *</label>
-          <input type="text" placeholder="Clave lada y número..." required />
+          <input id="from_phone" name="from_phone" type="text" placeholder="Clave lada y número..." required />
         </div>
         <div class="form-group">
           <label>¿Cómo nos contactaste?</label>
-          <select>
+          <select id="from_como" name="from_como">
+            <option value="">Seleccione una opción</option>
             <option value="Google">Google</option>
             <option value="Facebook">Facebook</option>
             <option value="Recomendación">Recomendación</option>
@@ -225,6 +228,8 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
         <div class="form-group full-width">
           <label>Cotización *</label>
           <textarea
+            id="from_cotizacion"
+            name="from_cotizacion"
             placeholder="Qué equipo le interesa, presupuesto, marca, capacidad?"
             rows="4"
             required></textarea>
@@ -232,22 +237,36 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       </div>
 
       <!-- reCAPTCHA placeholder -->
-      <div class="form-row">
-        <div class="form-group checkbox-group">
-          <input type="checkbox" id="robot-check" />
-          <label for="robot-check">No soy un robot</label>
-        </div>
-        <div class="recaptcha-box">
-          <img
-            src="recaptcha-placeholder.png"
-            alt="reCAPTCHA demo"
-            style="width:100px;"
-          />
-        </div>
-      </div>
 
       <button type="submit" class="btn-submit">Enviar</button>
     </form>
+    <div><b id="formSubmitText"></b></div>
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("miFormulario")
+          .addEventListener("submit", async function (event) {
+            event.preventDefault();
+            const serviceID = "service_55jqltw";
+            const templateID = "template_fww3q5k";
+            const publicKey = "eN464HirBdtg7HP81";
+            try {
+              await emailjs.sendForm(
+                serviceID,
+                templateID,
+                event.target,
+                publicKey,
+              );
+              document.getElementById("formSubmitText").innerHTML =
+                "Correo enviado correctamente.";
+              event.target.reset();
+            } catch (error) {
+              document.getElementById("formSubmitText").innerHTML =
+                "Hubo un error al enviar el correo.";
+            }
+          });
+      });
+    </script>
   </div>
 </section>
 <!-- SECCIÓN: ¿Por Qué Los Montacargas RTE? -->
@@ -735,7 +754,7 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       </p>
       <ul>
         <li>Garantía de 6 meses</li>
-        <li>Precios<br />Negociables en montacargas</li>
+        <li>Precios negociables en montacargas</li>
         <li>Conseguimos cualquier equipo o refacción</li>
         <li>Importamos el montacargas por usted</li>
       </ul>

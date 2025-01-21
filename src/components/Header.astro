@@ -43,7 +43,64 @@ import NavMenu from "./NavMenu.astro";
 					</div>
 				</div>
 			</div>
-			<div class="col-1"></div>
+			<div class="col-1 nav-conteiner">
+				<nav class="navbar navbar-light bg-light nav-bar-movil">
+					<div class="container-fluid">
+					  <button
+						class="btn btn-primary"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasMenu"
+						aria-controls="offcanvasMenu"
+					  >
+					  <i class="fa-solid fa-bars" style="color: #fff;"></i>
+					  </button>
+					</div>
+				  </nav>
+				  
+				  <div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasMenu"
+					aria-labelledby="offcanvasMenuLabel"
+				  >
+					<div class="offcanvas-header">
+					  <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+					  <button
+						type="button"
+						class="btn-close text-reset"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					  ></button>
+					</div>
+					<div class="offcanvas-body">
+					  <ul class="navbar-nav">
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Productos</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Libras</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Marcas</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Empresa</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Calculadora</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Contacto</a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+							
+			</div>
 		</div>
 	</div>
 </section>
