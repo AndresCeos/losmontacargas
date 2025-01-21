@@ -188,7 +188,7 @@
     margin-right: auto;
     position: relative;
     gap: 20px;
-    padding: 50px;
+    padding: 30px 50px;
   }
   .product-section-others h3, .product-section-others p{
     font-weight: 300;
@@ -280,7 +280,6 @@
     width: 20%;
     background-color: #fff;
     text-align: center;
-    padding: 40px 0px;
     position: relative;
   }
   
@@ -330,16 +329,22 @@
   }
   
   .offer-left h2 {
-    font-size: 1.4rem;
+    font-size: 20px;
     margin-bottom: 15px;
+    letter-spacing: 1px;
     color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
   }
   
   .offer-left p {
     margin-bottom: 10px;
-    line-height: 1.4;
+    line-height: 1.8rem;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .btn-catalog{
+    color: #ff1414;
+    font-weight: bold;
+    text-decoration: none;
   }
   
   .offer-left strong {
@@ -356,6 +361,11 @@
     margin-bottom: 5px;
     padding-left: 20px;
     position: relative;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 19px;
   }
   
   .advantages li::before {
@@ -385,18 +395,21 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    gap: 10px;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .social-media-f {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 5px;
+    justify-content: center;
   }
   
   .social-media span {
     font-weight: 600;
   }
-  
-  .social-media a img {
-    width: 24px;
-    height: 24px;
-  }
-  
   /* Formulario de contacto */
   .enquiry-form {
     background-color: #fff;
@@ -490,7 +503,7 @@
   
   /* ----- Sección: ¿Por Qué Los Montacargas RTE? ----- */
 .why-rte {
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
@@ -523,6 +536,7 @@
   
   /* Contenedor de las características (rapidez, confianza, crédito) */
   .why-features {
+    max-width: 1140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -532,30 +546,30 @@
   
   /* Cada "feature" es una columna */
   .feature-item {
-    max-width: 250px;
+    max-width: 30%;
   }
   
   .feature-icon {
     margin-bottom: 10px;
   }
   
-  .feature-icon img {
-    width: 40px;
-    height: 40px;
+  .feature-icon i {
+    font-size: 50px;
+    color: #ff1414;
   }
   
   .feature-item h3 {
-    font-size: 1.1rem;
-    color: #f00;
+    color: #000;
     margin-bottom: 10px;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 600;
   }
   
   .feature-item p {
-    font-size: 0.9rem;
-    line-height: 1.3;
+    font-size: 15px;
     color: #555;
+    font-weight: 100;
   }
   
   /* Logos de marcas */
@@ -563,13 +577,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    max-width: 1140px;
+  }
+
+  .brand-logo-content{
+    width: 20%;
+    padding: 10px;
   }
   
   .brand-logos img {
-    max-height: 40px;
-    width: auto;
     object-fit: contain;
+    max-width: 78%;
   }
 /* BANNER: ARRENDAMIENTO Y CRÉDITO */
 .arrendamiento-banner {
@@ -597,29 +615,39 @@
   }
   
   .arrendamiento-content h2 {
-    font-size: 2rem;
+    font-family: "Roboto", Sans-serif;
+    font-size: 34px;
+    font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    color: #ffffff;
+    margin-bottom: 25px;
   }
   
   .arrendamiento-content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
   }
   
   .btn-comprar-ahora {
+    background-color: #E51212;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1px;
+    fill: #ffffff;
+    color: #ffffff;
+    border-radius: 05px 05px 05px 05px;
+    padding: 15px 30px 15px 30px;
     display: inline-block;
-    background-color: #f00; /* Rojo principal */
-    color: #fff;
-    padding: 10px 20px;
+    transition: all .3s;
     text-decoration: none;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: background 0.3s;
   }
   
   .btn-comprar-ahora:hover {
-    background-color: #c00;
+    transform: translateY(-8px);
+    background-color: #AD0505;
   }
   
   /* SECCIÓN DE PRODUCTOS POR CATEGORÍA */
@@ -638,9 +666,9 @@
   }
   
   .product-grid-section h3 a {
-    color: #f00;
-    text-decoration: none;
-    font-weight: 600;
+    color: #000;
+    font-weight: 800;
+    word-spacing: 1px;
   }
   
   .product-grid-section h3 a:hover {
@@ -657,9 +685,6 @@
 
   
   /* Si deseas tarjetas más anchas, agrega la clase "wide" */
-  .product-item.wide {
-    width: 200px;
-  }
   
   /* Título del producto */
   .product-item h4 {
@@ -998,7 +1023,7 @@
   }
 /* ===== SECCIÓN SUPERIOR OSCURA ===== */
 .footer-top {
-    background-color: #333; 
+    background-color: #292929; 
     color: #fff;
     padding: 30px 20px;
   }
@@ -1097,8 +1122,8 @@
   
   /* ===== PIE DE PÁGINA (FOOTER) ===== */
   .site-footer {
-    background-color: #222;
-    color: #ccc;
+    background-color: #fff;
+    color: #7a7a7a;
     padding: 20px 0;
     font-size: 0.9rem;
   }
@@ -1115,7 +1140,14 @@
   
   .footer-col {
     flex: 1 1 200px;
-    min-width: 200px; 
+    min-width: 200px;
+    color: #000;
+  }
+
+  .footer-col h4{
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
   }
   
   /* Columna 1: Marca, redes, descripción */
@@ -1126,14 +1158,14 @@
   }
   
   .footer-brand .footer-logos img {
-    max-height: 50px;
-    width: auto;
+    max-height: 20%;
+    width: 40%;
   }
   
   .footer-brand h4 {
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #fff;
+    color: #000;
   }
   
   /* Redes sociales en el footer */
@@ -1152,7 +1184,7 @@
   .footer-products h4 {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
   }
   
   .footer-products ul {
@@ -1166,7 +1198,7 @@
   }
   
   .footer-products li a {
-    color: #ccc;
+    color: #000;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -1253,3 +1285,163 @@
     }
   }
       
+  .social-media .facebook{
+    color: white;
+    background-color: #3b5998;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media .instagram{
+    color: white;
+    background-color: #FF1875;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media .youtube{
+    color: white;
+    background-color: #cd201f;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media .linkedin{
+    color: white;
+    background-color: #0077b5;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media .vimeo{
+    color: white;
+    background-color: #1ab7ea;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media-f .facebook{
+    color: white;
+    background-color: #7a7a7a;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media-f .instagram{
+    color: white;
+    background-color: #7a7a7a;;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media-f .youtube{
+    color: white;
+    background-color: #7a7a7a;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.social-media-f .linkedin{
+    color: white;
+    background-color: #7a7a7a;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media-f .vimeo{
+    color: white;
+    background-color: #7a7a7a;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media (max-width: 500px){
+    body{
+      width: fit-content;
+      width: max-content;
+    }
+
+    .product-section, .product-section-others{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card, .product-item{
+      width: 100%;
+    }
+
+    .offer-section{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-6{
+      width: 100%;
+    }
+
+    .product-card h3, .product-item h4{
+      font-size: 30px;
+    }
+
+    .product-card p, .product-item p{
+      font-size: 25px;
+    }
+
+    .product-card a, .product-item a{
+      font-size: 25px;
+    }
+
+    h2{
+      font-size: 40px !important;
+    }
+
+    .product-grid-section h3{
+      font-size: 40px !important;
+    }
+
+    .three-steps p, .forklift-description p,.forklift-description li{
+      font-size: 25px;
+    }
+
+    .step-item{
+      max-width: 100%;
+    }
+
+    .reverse-movil{
+      flex-direction: column-reverse;
+    }
+    .distributor-description{
+      font-size: 25px;
+    }
+  }

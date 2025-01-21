@@ -10,600 +10,674 @@ import dos from "../assets/img/products/P1-6-1-e1733195070644-2.jpg";
 import tres from "../assets/img/products/222-3.jpg";
 import cuatro from "../assets/img/products/P1-6-1-4.jpg";
 import cinco from "../assets/img/products/DSC09219-e1721257587704-5.jpg";
+
+import THM from "../assets/img/marcas/TMH_Logo.png";
+import Sinoboom from "../assets/img/marcas/Sinoboom.jpg";
+import lonking from "../assets/img/marcas/lonking.png";
+import heli from "../assets/img/marcas/heli.png";
+import sync from "../assets/img/marcas/sync.jpg";
+
+import portadaVideo from "../assets/img/products/montacargas_video.webp";
+import portadaRTE from "../assets/img/empresa_montacargas.webp";
+import portadaMexico from "../assets/img/mexico.webp";
+
+import toyota1 from "../assets/img/toyota/1.jpg";
+import toyota2 from "../assets/img/toyota/2.jpg";
+import toyota3 from "../assets/img/toyota/3.jpg";
+import toyota4 from "../assets/img/toyota/4.jpg";
+import toyota5 from "../assets/img/toyota/5.jpg";
+
+import articulado1 from "../assets/img/articulados/1.jpg";
+import articulado2 from "../assets/img/articulados/2.jpg";
+import articulado3 from "../assets/img/articulados/3.jpg";
+import articulado4 from "../assets/img/articulados/4.jpg";
+import articulado5 from "../assets/img/articulados/5.jpg";
+
+import electricos1 from "../assets/img/electricos/1.jpg";
+import electricos2 from "../assets/img/electricos/2.jpeg";
+import electricos3 from "../assets/img/electricos/3.jpg";
+import electricos4 from "../assets/img/electricos/4.jpg";
+import electricos5 from "../assets/img/electricos/5.jpg";
+
+import tijeras1 from "../assets/img/tijeras/1.jpeg";
+import tijeras2 from "../assets/img/tijeras/2.jpeg";
+import tijeras3 from "../assets/img/tijeras/3.webp";
+import tijeras4 from "../assets/img/tijeras/4.jpeg";
+import tijeras5 from "../assets/img/tijeras/5.jpg";
+
+import compra1 from "../assets/img/compra/1.webp";
+import compra2 from "../assets/img/compra/2.webp";
+import compra3 from "../assets/img/compra/3.webp";
+
+import montacarga1 from "../assets/img/montacarga/1.webp";
+import montacarga2 from "../assets/img/montacarga/2.webp";
+import montacarga3 from "../assets/img/montacarga/3.webp";
+import montacarga4 from "../assets/img/montacarga/4.webp";
+import profeco from "../assets/img/montacarga/profeco.jpg";
 ---
+
 <!-- Sección de productos (del primer ejemplo) -->
 <section class="product-section">
-    <div class="product-card">
-      <img src={DSC0.src} alt="Montacargas" />
-      <h3>MONTACARGAS</h3>
-      <p>De combustión y eléctricos. De 2 a 10 Ton.</p>
-      <a href="#" class="btn-vermas">VER MÁS</a>
+  <div class="product-card">
+    <img src={DSC0.src} alt="Montacargas" />
+    <h3>MONTACARGAS</h3>
+    <p>De combustión y eléctricos. De 2 a 10 Ton.</p>
+    <a href="#" class="btn-vermas">VER MÁS</a>
+  </div>
+  <div class="product-card">
+    <img src={MontaCargas.src} alt="Plataformas" />
+    <h3>PLATAFORMAS</h3>
+    <p>Telescópicas y articuladas. Genie, JLG y Sinoboom.</p>
+    <a href="#" class="btn-vermas">VER MÁS</a>
+  </div>
+  <div class="product-card">
+    <img src={Tijeras.src} alt="Tijeras" />
+    <h3>TIJERAS</h3>
+    <p>Plataformas tipo tijera de todas las alturas.</p>
+    <a href="#" class="btn-vermas">VER MÁS</a>
+  </div>
+  <div class="product-card">
+    <img src={Generadores.src} alt="Generadores" />
+    <h3>GENERADORES</h3>
+    <p>Desde 10 KW - 200 KW, diésel y gas LP.</p>
+    <a href="#" class="btn-vermas">VER MÁS</a>
+  </div>
+  <div class="product-card">
+    <img src={Excavadores.src} alt="Excavadoras" />
+    <h3>EXCAVADORAS</h3>
+    <p>Minicargadores de 1 a 3 toneladas.</p>
+    <a href="#" class="btn-vermas">VER MÁS</a>
+  </div>
+</section>
+
+<!-- NUEVA SECCIÓN: Productos con "Precios<br/>Negociables", texto informativo y formulario -->
+<section class="immediate-delivery">
+  <h2>
+    Venta De Montacargas Con Entrega Inmediata <span>
+      | <a href="#">Ver Mas</a></span
+    >
+  </h2>
+
+  <!-- Carrusel / fila de productos -->
+  <div class="product-section-others">
+    <!-- Tarjeta 1 -->
+    <div class="product-item">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={uno.src} alt="Toyota 5000 lb" />
+      <h3>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Semi Nuevo</h3>
+      <p class="product-price">USD $24,950.00</p>
     </div>
-    <div class="product-card">
-      <img src={MontaCargas.src} alt="Plataformas" />
-      <h3>PLATAFORMAS</h3>
-      <p>Telescópicas y articuladas. Genie, JLG y Sinoboom.</p>
-      <a href="#" class="btn-vermas">VER MÁS</a>
+    <!-- Tarjeta 2 -->
+    <div class="product-item">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={dos.src} alt="Hando Gas LP Dual 5500 lb" />
+      <h3>Montacargas Hando Gas LP Dual 5500 LB HN25GL Nuevo</h3>
+      <p class="product-price">USD $22,950.00</p>
     </div>
-    <div class="product-card">
-      <img src={Tijeras.src} alt="Tijeras" />
-      <h3>TIJERAS</h3>
-      <p>Plataformas tipo tijera de todas las alturas.</p>
-      <a href="#" class="btn-vermas">VER MÁS</a>
+    <!-- Tarjeta 3 -->
+    <div class="product-item">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={tres.src} alt="Lonking Gas LP" />
+      <h3>Montacargas Lonking Gas LP Dual 5500 LB LG25 Nuevo</h3>
+      <p class="product-price">USD $23,950.00</p>
     </div>
-    <div class="product-card">
-      <img src={Generadores.src} alt="Generadores" />
-      <h3>GENERADORES</h3>
-      <p>Desde 10 KW - 200 KW, diésel y gas LP.</p>
-      <a href="#" class="btn-vermas">VER MÁS</a>
+    <!-- Tarjeta 4 -->
+    <div class="product-item">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={cuatro.src} alt="Hando 8000 lb" />
+      <h3>Montacargas Hando Gas LP 3.5 Ton L3G35GLT Gas Dual Nuevo</h3>
+      <p class="product-price">USD $27,950.00</p>
     </div>
-    <div class="product-card">
-      <img src={Excavadores.src} alt="Excavadoras" />
-      <h3>EXCAVADORAS</h3>
-      <p>Minicargadores de 1 a 3 toneladas.</p>
-      <a href="#" class="btn-vermas">VER MÁS</a>
+    <!-- Tarjeta 5 -->
+    <div class="product-item">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={cinco.src} alt="Lonking Eléctrico" />
+      <h3>Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo</h3>
+      <p class="product-price">USD $29,950.00</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- NUEVA SECCIÓN: Productos con "Precios<br/>Negociables", texto informativo y formulario -->
-  <section class="immediate-delivery">
-    <h2>Venta De Montacargas Con Entrega Inmediata <span> | <a href="#">Ver Mas</a></span></h2>
-
-    <!-- Carrusel / fila de productos -->
-    <div class="product-section-others">
-      <!-- Tarjeta 1 -->
-      <div class="product-item">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src={uno.src} alt="Toyota 5000 lb" />
-        <h3>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Semi Nuevo</h3>
-        <p class="product-price">USD $24,950.00</p>
-      </div>
-      <!-- Tarjeta 2 -->
-      <div class="product-item">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src={dos.src} alt="Hando Gas LP Dual 5500 lb" />
-        <h3>Montacargas Hando Gas LP Dual 5500 LB HN25GL Nuevo</h3>
-        <p class="product-price">USD $22,950.00</p>
-      </div>
-      <!-- Tarjeta 3 -->
-      <div class="product-item">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src={tres.src} alt="Lonking Gas LP" />
-        <h3>Montacargas Lonking Gas LP Dual 5500 LB LG25 Nuevo</h3>
-        <p class="product-price">USD $23,950.00</p>
-      </div>
-      <!-- Tarjeta 4 -->
-      <div class="product-item">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src={cuatro.src} alt="Hando 8000 lb" />
-        <h3>Montacargas Hando Gas LP 3.5 Ton L3G35GLT Gas Dual Nuevo</h3>
-        <p class="product-price">USD $27,950.00</p>
-      </div>
-      <!-- Tarjeta 5 -->
-      <div class="product-item">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src={cinco.src} alt="Lonking Eléctrico" />
-        <h3>Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo</h3>
-        <p class="product-price">USD $29,950.00</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: Texto de venta + formulario lateral + video -->
-  <section class="offer-section">
-    <div class="offer-left">
-      <h2>Venta De Montacargas Nuevos y Usados</h2>
-      <p>
-        Los Montacargas RTE es una empresa líder nacional en la 
-        <strong>venta de montacargas usados, seminuevos y nuevos garantizados.</strong> 
-        Todos los equipos semi nuevos son importados legalmente de Estados Unidos (U.S.A.) 
-        y estuvieron bajo estrictos programas de mantenimiento preventivo.
-      </p>
-
-      <p><strong>Marcas Disponibles:</strong> Toyota, Caterpillar, Heli, Clark, Yale, 
-        Hyster, Mitsubishi, Nissan, Unicarriers, Crown, Raymond, Hyundai, Lonking. 
-        <a href="#">[+] Ver Catálogo</a>
-      </p>
-
-      <ul class="advantages">
-        <li>Garantía de 6 meses</li>
-        <li>Precios<br/>Negociables en montacargas</li>
-        <li>Conseguimos cualquier equipo o refacción</li>
-        <li>Importamos el montacargas por usted</li>
-      </ul>
-
-      <!-- Video de YouTube (ejemplo) -->
-      <div class="video-container">
-        <iframe 
-          width="100%" 
-          height="250" 
-          src="https://www.youtube.com/embed/VIDEO_ID" 
-          title="Los Montacargas RTE" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <div class="offer-right">
-      <div class="social-media">
-        <span>Síguenos:</span>
-        <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="icon-instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="icon-youtube.png" alt="YouTube" /></a>
-        <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" /></a>
-        <a href="#"><img src="icon-twitter.png" alt="Twitter" /></a>
-      </div>
-
-      <!-- Formulario de contacto/cotización -->
-      <form class="enquiry-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Nombre *</label>
-            <input type="text" placeholder="Nombre..." required />
-          </div>
-          <div class="form-group">
-            <label>Correo electrónico *</label>
-            <input 
-              type="email" 
-              placeholder="Ej: ventas@losmontacargas.mx" 
-              required
-            />
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>Whatsapp *</label>
-            <input type="text" placeholder="Clave lada y número..." required />
-          </div>
-          <div class="form-group">
-            <label>¿Cómo nos contactaste?</label>
-            <select>
-              <option value="Google">Google</option>
-              <option value="Facebook">Facebook</option>
-              <option value="Recomendación">Recomendación</option>
-              <option value="Otro">Otro</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label>Cotización *</label>
-            <textarea 
-              placeholder="Qué equipo le interesa, presupuesto, marca, capacidad?" 
-              rows="4" 
-              required
-            ></textarea>
-          </div>
-        </div>
-
-        <!-- reCAPTCHA placeholder -->
-        <div class="form-row">
-          <div class="form-group checkbox-group">
-            <input type="checkbox" id="robot-check" />
-            <label for="robot-check">No soy un robot</label>
-          </div>
-          <div class="recaptcha-box">
-            <img 
-              src="recaptcha-placeholder.png" 
-              alt="reCAPTCHA demo" 
-              style="width:100px;"
-            />
-          </div>
-        </div>
-
-        <button type="submit" class="btn-submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-  <!-- SECCIÓN: ¿Por Qué Los Montacargas RTE? -->
-<section class="why-rte">
-    <h2>¿Por Qué Los Montacargas RTE?</h2>
+<!-- SECCIÓN: Texto de venta + formulario lateral + video -->
+<section class="offer-section">
+  <div class="offer-left">
+    <h2><b>Venta De Montacargas Nuevos y Usados</b></h2>
     <p>
-      En <strong>MONTACARGAS RTE</strong> somos un grupo de expertos en la 
-      asesoría y venta de montacargas. <br />
-      Contáctanos o cotiza en línea. <strong>Envío En 24 Horas.</strong><br />
-      <a href="#" class="reviews-link">Ver Reseñas</a>
+      Los Montacargas RTE es una empresa líder nacional en la
+      <strong
+        >venta de montacargas usados, seminuevos y nuevos garantizados.</strong
+      >
+      Todos los equipos semi nuevos son importados legalmente de Estados Unidos (U.S.A.)
+      y estuvieron bajo estrictos programas de mantenimiento preventivo.
     </p>
-  
-    <!-- Contenedor de columnas (rapidez, confianza, crédito) -->
-    <div class="why-features">
-      <!-- RAPIDEZ -->
-      <div class="feature-item">
-        <div class="feature-icon">
-          <!-- Ícono de ejemplo, reemplaza con la imagen o SVG que prefieras -->
-          <img src="icon-rapidez.png" alt="Rapidez" />
-        </div>
-        <h3>RAPIDEZ</h3>
-        <p>
-          Cotizamos y enviamos tu montacargas en tiempos de entrega récord, 
-          garantizado. Envío en 24 Horas.
-        </p>
-      </div>
-  
-      <!-- CONFIANZA -->
-      <div class="feature-item">
-        <div class="feature-icon">
-          <img src="icon-confianza.png" alt="Confianza" />
-        </div>
-        <h3>CONFIANZA</h3>
-        <p>
-          Cientos de personas confían en Los Montacargas cada día para recibir ayuda. 
-          Contamos con expertos en montacargas.
-        </p>
-      </div>
-  
-      <!-- CRÉDITO -->
-      <div class="feature-item">
-        <div class="feature-icon">
-          <img src="icon-credito.png" alt="Crédito" />
-        </div>
-        <h3>CRÉDITO</h3>
-        <p>
-          Ahorra tiempo y dinero, excelente calidad por excelentes precios. 
-          Llévate tu montacargas a pagos por arrendamiento.
-        </p>
-      </div>
+
+    <p>
+      <strong>Marcas Disponibles:</strong> Toyota, Caterpillar, Heli, Clark, Yale,
+      Hyster, Mitsubishi, Nissan, Unicarriers, Crown, Raymond, Hyundai, Lonking.<br
+      />
+      <a href="#" class="btn-catalog">[+] Ver Catálogo</a>
+    </p>
+
+    <ul class="advantages">
+      <li>Garantía de 6 meses</li>
+      <li>Precios negociables en montacargas</li>
+      <li>Conseguimos cualquier equipo o refacción</li>
+      <li>Importamos el montacargas por usted</li>
+    </ul>
+
+    <!-- Video de YouTube (ejemplo) -->
+    <div class="video-container">
+      <a href="https://www.youtube.com/watch?v=Hnxjj7Cu8f0" target="_blank">
+        <img
+          src={portadaVideo.src}
+          alt="portada video"
+          width="100%"
+          height="250"
+        />
+      </a>
     </div>
-  
-    <!-- Banda de logos de marcas -->
-    <div class="brand-logos">
-      <img src="logo-toyota.png" alt="Toyota" />
-      <img src="logo-sinoboom.png" alt="Sinoboom" />
-      <img src="logo-lonking.png" alt="Lonking" />
-      <img src="logo-heli.png" alt="Heli" />
-      <img src="logo-hyundai.png" alt="Hyundai" />
+  </div>
+
+  <div class="offer-right">
+    <div class="social-media">
+      <span>Síguenos:</span>
+      <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" class="vimeo"><i class="fa-brands fa-vimeo"></i></a>
     </div>
-  </section>
+
+    <!-- Formulario de contacto/cotización -->
+    <form class="enquiry-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre *</label>
+          <input type="text" placeholder="Nombre..." required />
+        </div>
+        <div class="form-group">
+          <label>Correo electrónico *</label>
+          <input
+            type="email"
+            placeholder="Ej: ventas@losmontacargas.mx"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Whatsapp *</label>
+          <input type="text" placeholder="Clave lada y número..." required />
+        </div>
+        <div class="form-group">
+          <label>¿Cómo nos contactaste?</label>
+          <select>
+            <option value="Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Recomendación">Recomendación</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label>Cotización *</label>
+          <textarea
+            placeholder="Qué equipo le interesa, presupuesto, marca, capacidad?"
+            rows="4"
+            required></textarea>
+        </div>
+      </div>
+
+      <!-- reCAPTCHA placeholder -->
+      <div class="form-row">
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="robot-check" />
+          <label for="robot-check">No soy un robot</label>
+        </div>
+        <div class="recaptcha-box">
+          <img
+            src="recaptcha-placeholder.png"
+            alt="reCAPTCHA demo"
+            style="width:100px;"
+          />
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar</button>
+    </form>
+  </div>
+</section>
+<!-- SECCIÓN: ¿Por Qué Los Montacargas RTE? -->
+<section class="why-rte">
+  <h2>¿Por Qué Los Montacargas RTE?</h2>
+  <p>
+    En <strong>MONTACARGAS RTE</strong> somos un grupo de expertos en la asesoría
+    y venta de montacargas. <br />
+    Contáctanos o cotiza en línea. <strong>Envío En 24 Horas.</strong><br />
+    <a href="#" class="reviews-link">Ver Reseñas</a>
+  </p>
+
+  <!-- Contenedor de columnas (rapidez, confianza, crédito) -->
+  <div class="why-features">
+    <!-- RAPIDEZ -->
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-rocket"></i>
+      </div>
+      <h3>RAPIDEZ</h3>
+      <p>
+        Cotizamos y enviamos tu montacargas en tiempos de entrega récord,
+        garantizado. Envío en 24 Horas.
+      </p>
+    </div>
+
+    <!-- CONFIANZA -->
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h3>CONFIANZA</h3>
+      <p>
+        Cientos de personas confían en Los Montacargas cada día para recibir
+        ayuda. Contamos con expertos en montacargas.
+      </p>
+    </div>
+
+    <!-- CRÉDITO -->
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-dollar-sign"></i>
+      </div>
+      <h3>CRÉDITO</h3>
+      <p>
+        Ahorra tiempo y dinero, excelente calidad por excelentes precios.
+        Llévate tu montacargas a pagos por arrendamiento.
+      </p>
+    </div>
+  </div>
+
+  <!-- Banda de logos de marcas -->
+  <div class="brand-logos">
+    <div class="brand-logo-content"><img src={THM.src} alt="Toyota" /></div>
+    <div class="brand-logo-content">
+      <img src={Sinoboom.src} alt="Sinoboom" />
+    </div>
+    <div class="brand-logo-content">
+      <img src={lonking.src} alt="Lonking" />
+    </div>
+    <div class="brand-logo-content"><img src={heli.src} alt="Heli" /></div>
+    <div class="brand-logo-content"><img src={sync.src} alt="Hyundai" /></div>
+  </div>
+</section>
 <!-- SECCIÓN BANNER: COMPRA CON ARRENDAMIENTO Y CRÉDITO -->
-<section class="arrendamiento-banner">
-    <div class="arrendamiento-content">
-      <h2>COMPRA CON ARRENDAMIENTO Y CRÉDITO</h2>
-      <p>PAGA TU MONTACARGAS A PAGOS MENSUALES CON CRÉDITO</p>
-      <a href="#" class="btn-comprar-ahora">COMPRAR AHORA</a>
-    </div>
-  </section>
-  
-  <!-- SECCIÓN: Montacargas Toyota Precios -->
-  <section class="product-grid-section">
-    <h3>
-      Montacargas Toyota Precios 
-      | <a href="#">Ver Mas</a>
-    </h3>
-    <div class="product-list">
-      <!-- Producto 1 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="toyota-5000-semi.jpg" alt="Toyota 5000 Lb Semi Nuevo" />
-        <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Semi Nuevo</h4>
-        <p class="product-price">USD $24,950.00</p>
-      </div>
-      <!-- Producto 2 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="toyota-5000-new1.jpg" alt="Toyota 5000 Lb Nuevo" />
-        <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Nuevo</h4>
-        <p class="product-price">USD $39,950.00</p>
-      </div>
-      <!-- Producto 3 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="toyota-5000-new2.jpg" alt="Toyota 5000 Lb Dual Gas" />
-        <h4>Montacargas Toyota 5000 Lb 8FGU25 Dual Gas Nuevo</h4>
-        <p class="product-price">USD $25,950.00</p>
-      </div>
-      <!-- Producto 4 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="toyota-5000-lpg.jpg" alt="Toyota 5000 Lb Gas LP" />
-        <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP Nuevo</h4>
-        <p class="product-price">USD $39,950.00</p>
-      </div>
-      <!-- Producto 5 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="toyota-5000-dual.jpg" alt="Toyota 5000 Lb Dual (Gasolina/LP)" />
-        <h4>
-          Montacargas Toyota 5000 Lb 8FGU25 
-          DUAL(GASOLINA/LP) Semi Nueva
-        </h4>
-        <p class="product-price">USD $28,950.00</p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- SECCIÓN: Plataformas Articuladas Precios -->
-  <section class="product-grid-section">
-    <h3>
-      Plataformas Articuladas Precios 
-      | <a href="#">Ver Mas</a>
-    </h3>
-    <div class="product-list">
-      <!-- Producto 1 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="plataforma-genie.jpg" alt="Plataforma Genie Eléctrica" />
-        <h4>Plataforma Articulada Genie, Eléctrica, 500 Lb</h4>
-        <p class="product-price">USD $45,950.00</p>
-      </div>
-      <!-- Producto 2 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="plataforma-sinoboom.jpg" alt="Plataforma Sinoboom 12m" />
-        <h4>
-          Plataforma Articulada SINOBOOM AB10ERJ 
-          Eléctrica, 500 Lb 12 Metros Nueva
-        </h4>
-        <p class="product-price">USD $57,950.00</p>
-      </div>
-      <!-- Producto 3 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="plataforma-sinoboom2.jpg" alt="Plataforma Sinoboom 16m" />
-        <h4>
-          Plataforma Articulada SINOBOOM AB14EJ Eléctrica, 500 Lb 16 Metros Nueva
-        </h4>
-        <p class="product-price">USD $64,950.00</p>
-      </div>
-      <!-- Producto 4 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="plataforma-zoomlion.jpg" alt="Plataforma Zoomlion ZA14J" />
-        <h4>
-          Plataforma Articulada Zoomlion ZA14J Eléctrica, 
-          14 Metros, 500 Lb Nueva
-        </h4>
-        <p class="product-price">USD $64,950.00</p>
-      </div>
-      <!-- Producto 5 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="plataforma-genie2.jpg" alt="Plataforma Genie 12.5m" />
-        <h4>
-          Plataforma Articulada GENIE Z34/22, Eléctrica, 500 Lb (12.5m) Nueva
-        </h4>
-        <p class="product-price">USD $62,950.00</p>
-      </div>
-    </div>
-  </section>
-    <!-- SECCIÓN: Montacargas Eléctricos Precios -->
+<section
+  class="arrendamiento-banner"
+  style={`background-image: url(${portadaRTE.src});`}
+>
+  <div id="background-overlay"></div>
+  <div class="arrendamiento-content">
+    <h2>COMPRA CON ARRENDAMIENTO Y CRÉDITO</h2>
+    <p>PAGA TU MONTACARGAS A PAGOS MENSUALES CON CRÉDITO</p>
+    <a href="#" class="btn-comprar-ahora">COMPRAR AHORA</a>
+  </div>
+</section>
+
+<!-- SECCIÓN: Montacargas Toyota Precios -->
 <section class="product-grid-section">
-    <h3>
-      Montacargas Eléctricos Precios 
-      | <a href="#">Ver Mas</a>
-    </h3>
-    <div class="product-list">
-      <!-- Producto 1 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="lonking-cpd25.jpg" alt="Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo" />
-        <h4>Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo</h4>
-        <p class="product-price">USD $29,950.00</p>
-      </div>
-  
-      <!-- Producto 2 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="hyundai-25BE-X.jpg" alt="Montacargas Hyundai Eléctrico 5000 LB, 25BE-X Nuevo" />
-        <h4>Montacargas Hyundai Eléctrico 5000 LB, 25BE-X Nuevo</h4>
-        <p class="product-price">USD $45,950.00</p>
-      </div>
-  
-      <!-- Producto 3 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="hombre-doble-reach.jpg" alt="Montacargas Hombre Parado Doble Reach LTMG FRB20D" />
-        <h4>Montacargas Hombre Parado Doble Reach, LTMG FRB20D, 2 Toneladas, Eléctrico (6m) Nuevo</h4>
-        <p class="product-price">USD $38,950.00</p>
-      </div>
-  
-      <!-- Producto 4 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="hombre-reach-sencillo.jpg" alt="Montacargas Hombre Parado Reach Sencillo LTMG FRB20S" />
-        <h4>Montacargas Hombre Parado Reach Sencillo, LTMG FRB20S, 2 Ton, Eléctrico (6m) Nuevo</h4>
-        <p class="product-price">USD $34,950.00</p>
-      </div>
-  
-      <!-- Producto 5 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="lonking-6500lb.jpg" alt="Montacargas Lonking 6500 Lb 3 Toneladas LG30B Eléctrico" />
-        <h4>Montacargas Lonking 6500 Lb 3 Toneladas LG30B Eléctrico Nuevo</h4>
-        <p class="product-price">USD $34,950.00</p>
-      </div>
-  
+  <h3>
+    Montacargas Toyota Precios | <a href="#">Ver Mas</a>
+  </h3>
+  <div class="product-section-others">
+    <!-- Producto 1 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={toyota1.src} alt="Toyota 5000 Lb Semi Nuevo" />
+      <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Semi Nuevo</h4>
+      <p class="product-price">USD $24,950.00</p>
     </div>
-  </section>
-  
-  <!-- SECCIÓN: Plataformas Tipo Tijera Precios -->
-  <section class="product-grid-section">
-    <h3>
-      Plataformas Tipo Tijera Precios 
-      | <a href="#">Ver Mas</a>
-    </h3>
-    <div class="product-list">
-      <!-- Producto 1 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="tijera-sinoboom-0808S.jpg" alt="Plataforma Tijera Sinoboom Eléctrica 0808S" />
-        <h4>Plataforma Tijera Sinoboom Eléctrica 0808S (10m) 500 Lb Nueva</h4>
-        <p class="product-price">USD $22,950.00</p>
-      </div>
-  
-      <!-- Producto 2 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="tijera-sinoboom-8m.jpg" alt="Plataforma Tijera Sinoboom Eléctrica 8m" />
-        <h4>Plataforma Tijera Sinoboom Eléctrica (8m) GTJZ0808, 500 Lb Nueva</h4>
-        <p class="product-price">USD $19,950.00</p>
-      </div>
-  
-      <!-- Producto 3 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="tijera-genie-gs3246.jpg" alt="Plataforma Tijera Genie Eléctrica GS3246" />
-        <h4>Plataforma Tijera Genie Eléctrica GS3246 (12m) 500 Lb Nueva</h4>
-        <p class="product-price">USD $34,950.00</p>
-      </div>
-  
-      <!-- Producto 4 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="tijera-heli-js0607E.jpg" alt="Plataforma Tijera Heli JS0607E" />
-        <h4>Plataforma Tijera Heli Eléctrica JS0607E (6m) 750 Lb Nueva</h4>
-        <p class="product-price">USD $23,950.00</p>
-      </div>
-  
-      <!-- Producto 5 -->
-      <div class="product-item wide">
-        <div class="negociable-badge">Precios<br/>Negociables</div>
-        <img src="tijera-usada-genie.jpg" alt="Plataforma Tijera Usada Dual Genie" />
-        <h4>Plataforma Tijera Usada, Dual, 2500 Lb, Genie</h4>
-        <p class="product-price">USD $18,950.00</p>
-      </div>
-  </section>
+    <!-- Producto 2 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={toyota2.src} alt="Toyota 5000 Lb Nuevo" />
+      <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Nuevo</h4>
+      <p class="product-price">USD $39,950.00</p>
+    </div>
+    <!-- Producto 3 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={toyota3.src} alt="Toyota 5000 Lb Dual Gas" />
+      <h4>Montacargas Toyota 5000 Lb 8FGU25 Dual Gas Nuevo</h4>
+      <p class="product-price">USD $25,950.00</p>
+    </div>
+    <!-- Producto 4 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={toyota4.src} alt="Toyota 5000 Lb Gas LP" />
+      <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP Nuevo</h4>
+      <p class="product-price">USD $39,950.00</p>
+    </div>
+    <!-- Producto 5 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={toyota5.src} alt="Toyota 5000 Lb Dual (Gasolina/LP)" />
+      <h4>Montacargas Toyota 5000 Lb 8FGU25 DUAL(GASOLINA/LP) Semi Nueva</h4>
+      <p class="product-price">USD $28,950.00</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: Plataformas Articuladas Precios -->
+<section class="product-grid-section">
+  <h3>
+    Plataformas Articuladas Precios | <a href="#">Ver Mas</a>
+  </h3>
+  <div class="product-section-others">
+    <!-- Producto 1 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={articulado1.src} alt="Plataforma Genie Eléctrica" />
+      <h4>Plataforma Articulada Genie, Eléctrica, 500 Lb</h4>
+      <p class="product-price">USD $45,950.00</p>
+    </div>
+    <!-- Producto 2 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={articulado2.src} alt="Plataforma Sinoboom 12m" />
+      <h4>
+        Plataforma Articulada SINOBOOM AB10ERJ Eléctrica, 500 Lb 12 Metros Nueva
+      </h4>
+      <p class="product-price">USD $57,950.00</p>
+    </div>
+    <!-- Producto 3 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={articulado3.src} alt="Plataforma Sinoboom 16m" />
+      <h4>
+        Plataforma Articulada SINOBOOM AB14EJ Eléctrica, 500 Lb 16 Metros Nueva
+      </h4>
+      <p class="product-price">USD $64,950.00</p>
+    </div>
+    <!-- Producto 4 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={articulado4.src} alt="Plataforma Zoomlion ZA14J" />
+      <h4>
+        Plataforma Articulada Zoomlion ZA14J Eléctrica, 14 Metros, 500 Lb Nueva
+      </h4>
+      <p class="product-price">USD $64,950.00</p>
+    </div>
+    <!-- Producto 5 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={articulado5.src} alt="Plataforma Genie 12.5m" />
+      <h4>
+        Plataforma Articulada GENIE Z34/22, Eléctrica, 500 Lb (12.5m) Nueva
+      </h4>
+      <p class="product-price">USD $62,950.00</p>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN: Montacargas Eléctricos Precios -->
+<section class="product-grid-section">
+  <h3>
+    Montacargas Eléctricos Precios | <a href="#">Ver Mas</a>
+  </h3>
+  <div class="product-section-others">
+    <!-- Producto 1 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img
+        src={electricos1.src}
+        alt="Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo"
+      />
+      <h4>Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo</h4>
+      <p class="product-price">USD $29,950.00</p>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img
+        src={electricos2.src}
+        alt="Montacargas Hyundai Eléctrico 5000 LB, 25BE-X Nuevo"
+      />
+      <h4>Montacargas Hyundai Eléctrico 5000 LB, 25BE-X Nuevo</h4>
+      <p class="product-price">USD $45,950.00</p>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img
+        src={electricos3.src}
+        alt="Montacargas Hombre Parado Doble Reach LTMG FRB20D"
+      />
+      <h4>
+        Montacargas Hombre Parado Doble Reach, LTMG FRB20D, 2 Toneladas,
+        Eléctrico (6m) Nuevo
+      </h4>
+      <p class="product-price">USD $38,950.00</p>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img
+        src={electricos4.src}
+        alt="Montacargas Hombre Parado Reach Sencillo LTMG FRB20S"
+      />
+      <h4>
+        Montacargas Hombre Parado Reach Sencillo, LTMG FRB20S, 2 Ton, Eléctrico
+        (6m) Nuevo
+      </h4>
+      <p class="product-price">USD $34,950.00</p>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img
+        src={electricos5.src}
+        alt="Montacargas Lonking 6500 Lb 3 Toneladas LG30B Eléctrico"
+      />
+      <h4>Montacargas Lonking 6500 Lb 3 Toneladas LG30B Eléctrico Nuevo</h4>
+      <p class="product-price">USD $34,950.00</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: Plataformas Tipo Tijera Precios -->
+<section class="product-grid-section">
+  <h3>
+    Plataformas Tipo Tijera Precios | <a href="#">Ver Mas</a>
+  </h3>
+  <div class="product-section-others">
+    <!-- Producto 1 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img
+        src={tijeras1.src}
+        alt="Plataforma Tijera Sinoboom Eléctrica 0808S"
+      />
+      <h4>Plataforma Tijera Sinoboom Eléctrica 0808S (10m) 500 Lb Nueva</h4>
+      <p class="product-price">USD $22,950.00</p>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={tijeras2.src} alt="Plataforma Tijera Sinoboom Eléctrica 8m" />
+      <h4>Plataforma Tijera Sinoboom Eléctrica (8m) GTJZ0808, 500 Lb Nueva</h4>
+      <p class="product-price">USD $19,950.00</p>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={tijeras3.src} alt="Plataforma Tijera Genie Eléctrica GS3246" />
+      <h4>Plataforma Tijera Genie Eléctrica GS3246 (12m) 500 Lb Nueva</h4>
+      <p class="product-price">USD $34,950.00</p>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={tijeras4.src} alt="Plataforma Tijera Heli JS0607E" />
+      <h4>Plataforma Tijera Heli Eléctrica JS0607E (6m) 750 Lb Nueva</h4>
+      <p class="product-price">USD $23,950.00</p>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="product-item wide">
+      <div class="negociable-badge">Precios<br />Negociables</div>
+      <img src={tijeras5.src} alt="Plataforma Tijera Usada Dual Genie" />
+      <h4>Plataforma Tijera Usada, Dual, 2500 Lb, Genie</h4>
+      <p class="product-price">USD $18,950.00</p>
+    </div>
+  </div>
   <!-- SECCIÓN: COMPRA TU MONTACARGAS EN 3 PASOS -->
-<section class="three-steps">
+  <section class="three-steps">
     <h2>Compra Tu Montacargas En 3 Pasos</h2>
     <p>
-      En <strong>MONTACARGAS RTE</strong> somos un grupo de expertos 
-      en la asesoría y venta de montacargas. <br />
-      Contáctanos o cotiza en línea. 
+      En <strong>MONTACARGAS RTE</strong> somos un grupo de expertos en la asesoría
+      y venta de montacargas. <br />
+      Contáctanos o cotiza en línea.
       <strong>Envío En 24 Horas.</strong>
     </p>
-  
+
     <div class="steps-container">
       <!-- Paso 1 -->
       <div class="step-item">
         <!-- Imagen ejemplo -->
-        <img 
-          src="compra-videollamada.jpg" 
-          alt="Haz una cita y ve tu equipo por videollamada" 
+        <img
+          src={compra1.src}
+          alt="Haz una cita y ve tu equipo por videollamada"
         />
         <h3>Haz una cita y ve tu equipo por videollamada</h3>
         <p>
-          Encuentra el montacargas de tus sueños y haz 
-          una cita para que lo puedas ver por videollamada.
+          Encuentra el montacargas de tus sueños y haz una cita para que lo
+          puedas ver por videollamada.
         </p>
       </div>
       <!-- Paso 2 -->
       <div class="step-item">
-        <img 
-          src="entrega-domicilio.jpg" 
-          alt="Entrega a domicilio. Rápida y fácil." 
-        />
+        <img src={compra2.src} alt="Entrega a domicilio. Rápida y fácil." />
         <h3>Entrega a domicilio. Rápida y fácil.</h3>
         <p>
-          Todas nuestras entregas y recogidas se pueden hacer 
-          desde la comodidad de tu casa, bajo nuestras estrictas 
-          medidas de sanitización.
+          Todas nuestras entregas y recogidas se pueden hacer desde la comodidad
+          de tu casa, bajo nuestras estrictas medidas de sanitización.
         </p>
       </div>
       <!-- Paso 3 -->
       <div class="step-item">
-        <img 
-          src="montacargas-nuevos.jpg" 
-          alt="Montacargas Nuevos y Seminuevos Certificados" 
+        <img
+          src={compra3.src}
+          alt="Montacargas Nuevos y Seminuevos Certificados"
         />
         <h3>Montacargas Nuevos y Seminuevos Certificados</h3>
         <p>
-          Todos los montacargas son inspeccionados y pasan 
-          por más de 30 revisiones, son restaurados para 
-          quedar como nuevos.
+          Todos los montacargas son inspeccionados y pasan por más de 30
+          revisiones, son restaurados para quedar como nuevos.
         </p>
       </div>
     </div>
   </section>
-  
-  <!-- SECCIÓN: MONTACARGAS MÉXICO (BANNER) -->
-  <section class="mexico-banner">
-    <div class="banner-overlay"></div> <!-- Opcional, si deseas oscurecer la imagen -->
-    <div class="banner-content">
-      <h2>MONTACARGAS MÉXICO</h2>
-      <p>LOS MEJORES PRECIO EN MONTACARGAS EN MÉXICO</p>
-      <a href="#" class="btn-comprar-mexico">COMPRAR AHORA</a>
-    </div>
-  </section>
-<!-- SECCIÓN: Montacargas Combustión y Montacargas Eléctricos -->
-<section class="forklift-section">
-
+</section>
+<!-- SECCIÓN: MONTACARGAS MÉXICO (BANNER) -->
+<section
+  class="arrendamiento-banner"
+  style={`background-image: url(${portadaMexico.src});`}
+>
+  <div id="background-overlay"></div>
+  <div class="arrendamiento-content">
+    <h2>Montacargas MÉXICO</h2>
+    <p>los mejores precio EN MONTACARGAS EN MÉXICO</p>
+    <a href="#" class="btn-comprar-ahora">COMPRAR AHORA</a>
+  </div>
+</section>
+<section class="product-grid-section">
+  <!-- SECCIÓN: Montacargas Combustión y Montacargas Eléctricos -->
+  <section class="forklift-section">
     <!-- Bloque 1: Montacargas de Combustión Interna -->
     <div class="forklift-info-block">
       <div class="forklift-image">
         <!-- Ajusta la ruta y nombre del archivo de imagen -->
-        <img 
-          src="montacargas-naranja.jpg" 
-          alt="Montacargas Hando de combustión interna" 
+        <img
+          src={montacarga1.src}
+          alt="Montacargas Hando de combustión interna"
         />
       </div>
       <div class="forklift-description">
         <h3>Montacargas De Combustión Interna De Gas LP En Hombre Sentado</h3>
         <p>
-          <strong>Montacargas de combustión interna:</strong> 5,000 Lb a 30,000 Lb.<br/>
-          <strong>Combustible:</strong> Gas LP, Gasolina, Diésel.<br/>
+          <strong>Montacargas de combustión interna:</strong> 5,000 Lb a 30,000 Lb.<br
+          />
+          <strong>Combustible:</strong> Gas LP, Gasolina, Diésel.<br />
           <strong>Capacidades:</strong> 2.5, 3, 3.5, 5, 7, 10, 15, 20 Toneladas.
         </p>
         <ul>
-          <li>Conseguimos el montacargas que necesitas a los mejores precios en subastas.</li>
+          <li>
+            Conseguimos el montacargas que necesitas a los mejores precios en
+            subastas.
+          </li>
           <li>Tenemos más de 200 montacargas en entrega inmediata.</li>
           <li>Somos distribuidores de las marcas más buscadas en México.</li>
         </ul>
       </div>
     </div>
-  
     <!-- Separador visual (opcional) -->
     <hr />
-  
+
     <!-- Bloque 2: Montacargas Eléctricos con Batería de Litio -->
-    <div class="forklift-info-block reverse">
+    <div class="forklift-info-block reverse-movil">
       <div class="forklift-description">
         <h3>Montacargas Eléctricos Con Batería De Litio En Hombre Sentado</h3>
         <p>
-          <strong>Montacargas eléctricos:</strong> 2,000 Lb a 15,000 Lb.<br/>
-          <strong>Tipos de batería:</strong> Estándar (Plomo-Ácido), Ion-Litio.<br/>
+          <strong>Montacargas eléctricos:</strong> 2,000 Lb a 15,000 Lb.<br />
+          <strong>Tipos de batería:</strong> Estándar (Plomo-Ácido), Ion-Litio.<br
+          />
           <strong>Capacidades:</strong> 2.5, 3, 3.5, 5, 7, 10, 15, 20 Toneladas.
         </p>
         <ul>
-          <li>Los montacargas eléctricos nuevos incluyen cargador de carga rápida (2 horas).</li>
+          <li>
+            Los montacargas eléctricos nuevos incluyen cargador de carga rápida
+            (2 horas).
+          </li>
           <li>Tienen un precio en descuento de: $29,950 USD + IVA.</li>
-          <li>Cuentan con mástil triple, llantas sólidas y desplazador lateral.</li>
+          <li>
+            Cuentan con mástil triple, llantas sólidas y desplazador lateral.
+          </li>
         </ul>
       </div>
       <div class="forklift-image">
         <!-- Ajusta la ruta y nombre del archivo de imagen -->
-        <img 
-          src="montacargas-verde.jpg" 
-          alt="Montacargas Eléctrico Hando con batería de litio" 
+        <img
+          src={montacarga2.src}
+          alt="Montacargas Eléctrico Hando con batería de litio"
         />
       </div>
     </div>
-  
   </section>
   <!-- SECCIÓN: Distribuidores HANDO y Porqué Comprar -->
-<section class="distributor-section">
-
+  <section class="distributor-section">
     <!-- Bloque 1: Imagen izquierda, texto derecha -->
     <div class="distributor-block">
       <div class="distributor-image">
-        <img 
-          src="hando-naranja.jpg" 
-          alt="Montacargas Hando Combustión Interna" 
-        />
+        <img src={montacarga3.src} alt="Montacargas Hando Combustión Interna" />
       </div>
       <div class="distributor-description">
         <h3>Distribuidores De Montacargas HANDO</h3>
         <p>
-          Somos <strong>distribuidores nacionales</strong> de la marca Hando, 
-          uno de los <em>top 3 fabricantes más grandes</em> de montacargas en Asia.  
-          Hando es una empresa de máximo prestigio y calidad, 
-          tenemos el inventario más grande en el país.
+          Somos <strong>distribuidores nacionales</strong> de la marca Hando, uno
+          de los <em>top 3 fabricantes más grandes</em> de montacargas en Asia. Hando
+          es una empresa de máximo prestigio y calidad, tenemos el inventario más
+          grande en el país.
         </p>
         <p>
-          <strong>Brochure Lonking:</strong> 
+          <strong>Brochure Lonking:</strong>
           <a href="#" target="_blank">Brochure</a>
         </p>
         <ul>
@@ -613,88 +687,82 @@ import cinco from "../assets/img/products/DSC09219-e1721257587704-5.jpg";
         </ul>
       </div>
     </div>
-  
+
     <!-- Separador horizontal (opcional) -->
     <hr />
-  
+
     <!-- Bloque 2: Texto a la izquierda, imagen a la derecha -->
-    <div class="distributor-block reverse">
+    <div class="distributor-block reverse-movil">
       <div class="distributor-description">
         <h3>Porque Comprar Con Los Montacargas?</h3>
         <p>
-          <strong>Comprar con una empresa confiable</strong>, que da garantía, 
-          y solo vende productos de máxima calidad; es mejor decisión que comprar 
+          <strong>Comprar con una empresa confiable</strong>, que da garantía, y
+          solo vende productos de máxima calidad; es mejor decisión que comprar
           con vendedores desconocidos.
         </p>
         <p>
-          <strong>Queremos ganarnos su confianza</strong> y que podamos ser parte de su empresa.
-          Tenemos convenios con las distribuidoras más grandes de México y 
-          conseguimos cualquier montacargas.
+          <strong>Queremos ganarnos su confianza</strong> y que podamos ser parte
+          de su empresa. Tenemos convenios con las distribuidoras más grandes de
+          México y conseguimos cualquier montacargas.
         </p>
-  
+
         <!-- Logos (ejemplo) -->
         <div class="logos-row">
-          <img src="profeco.png" alt="PROFECO" />
-          <img src="distintivo-digital.png" alt="Distintivo Digital" />
+          <img src={profeco.src} alt="PROFECO" style="width: 40% !important;" />
         </div>
       </div>
       <div class="distributor-image">
-        <img 
-          src="montacargas-lm.jpg" 
-          alt="Montacargas RTE" 
-        />
+        <img src={montacarga4.src} alt="Montacargas RTE" />
       </div>
     </div>
-  
   </section>
-  
-  <!-- SECCIÓN SUPERIOR OSCURA -->
+</section>
+<!-- SECCIÓN SUPERIOR OSCURA -->
 <section class="footer-top">
-    <div class="footer-top-content">
-      <!-- Lado Izquierdo: Información "¿Quiénes Somos?" -->
-      <div class="footer-about">
-        <h3>¿Quienes Somos?</h3>
-        <p>
-          <strong>Montacargas RTE</strong> es una empresa con más de 
-          <strong>30 años de experiencia</strong>. <br />
-          Tenemos más de 10,000 m2 de instalaciones en Apodaca N.L. 
-          Más de 900 montacargas en stock.
-        </p>
-        <p>
-          Somos parte del grupo RTE De México, una empresa sólida y 
-          conocida en todo el país.
-        </p>
-        <ul>
-          <li>Garantía de 6 meses</li>
-          <li>Precios<br/>Negociables en montacargas</li>
-          <li>Conseguimos cualquier equipo o refacción</li>
-          <li>Importamos el montacargas por usted</li>
-        </ul>
+  <div class="footer-top-content">
+    <!-- Lado Izquierdo: Información "¿Quiénes Somos?" -->
+    <div class="footer-about">
+      <h3>¿Quienes Somos?</h3>
+      <p>
+        <strong>Montacargas RTE</strong> es una empresa con más de
+        <strong>30 años de experiencia</strong>. <br />
+        Tenemos más de 10,000 m2 de instalaciones en Apodaca N.L. Más de 900 montacargas
+        en stock.
+      </p>
+      <p>
+        Somos parte del grupo RTE De México, una empresa sólida y conocida en
+        todo el país.
+      </p>
+      <ul>
+        <li>Garantía de 6 meses</li>
+        <li>Precios<br />Negociables en montacargas</li>
+        <li>Conseguimos cualquier equipo o refacción</li>
+        <li>Importamos el montacargas por usted</li>
+      </ul>
+    </div>
+
+    <!-- Lado Derecho: Mapa de Google y redes -->
+    <div class="footer-map">
+      <h4>Los Montacargas RTE en GoogleMaps</h4>
+      <a href="#" class="map-link">Abrir en Google Maps:</a>
+      <!-- Ejemplo de iframe de Google Maps -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18...etc..."
+          width="100%"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"></iframe>
       </div>
-  
-      <!-- Lado Derecho: Mapa de Google y redes -->
-      <div class="footer-map">
-        <h4>Los Montacargas RTE en GoogleMaps</h4>
-        <a href="#" class="map-link">Abrir en Google Maps:</a>
-        <!-- Ejemplo de iframe de Google Maps -->
-        <div class="map-container">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18...etc..."
-            width="100%" 
-            height="200" 
-            style="border:0;"
-            allowfullscreen="" 
-            loading="lazy"
-          ></iframe>
-        </div>
-        <p><strong>Síguenos:</strong></p>
-        <div class="social-media">
-          <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="icon-instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="icon-youtube.png" alt="YouTube" /></a>
-          <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" /></a>
-          <a href="#"><img src="icon-twitter.png" alt="Twitter" /></a>
-        </div>
+      <div class="social-media">
+        <span>Síguenos:</span>
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="vimeo"><i class="fa-brands fa-vimeo"></i></a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
