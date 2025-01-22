@@ -1470,18 +1470,21 @@
       font-size: 45px;
     }
     .offer-left h2{
-      font-size: 60px;
+      font-size: 70px;
     }
     .offer-left p{
-      font-size: 45px;
-      line-height: 3rem;
+      font-size: 60px !important;
+      line-height: 5rem;
     }
     .offer-left li{
-      font-size: 45px;
-      line-height: 3rem;
+      font-size: 50px;
+      line-height: 4rem;
+    }
+    .offer-left ul{
+      margin-top: 50px;
     }
     .advantages li{
-      padding-left: 40px;
+      padding-left: 60px;
     }
     .video-container{
       max-width: 100%;
@@ -1663,5 +1666,15 @@
     }
     .nav-bar-movil i{
       font-size: 100px;
+    }
+    .arrendamiento-banner{
+      height: auto !important;
+    }
+    .arrendamiento-banner .arrendamiento-content{
+      width: 80%;
+      padding: 100px 0px;
+    }
+    #hero{
+      background-position: center !important
     }
   }
