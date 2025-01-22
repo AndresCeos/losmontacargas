@@ -281,6 +281,8 @@
     background-color: #fff;
     text-align: center;
     position: relative;
+    text-decoration: none;
+    color: #000;
   }
   
   .product-item img {
@@ -290,10 +292,12 @@
     border-radius: 5px;
     transition-duration: 0.3s;
   }
+  .product-item img:hover{
+  }
   
   .negociable-badge {
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 10px;
     background-color: #00c853; /* Verde */
     color: #fff;
