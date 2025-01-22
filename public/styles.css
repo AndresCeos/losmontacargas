@@ -1004,6 +1004,23 @@
     border-top: 1px solid #ddd;
     margin: 20px 0;
   }
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 50px; /* Espaciado desde la parte inferior */
+    right: 20px;  /* Espaciado desde el lado derecho */
+    width: 60px;  /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    background-color: #25d366; /* Color de fondo */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
   
   /* ----- Responsividad básica (opcional) ----- */
   @media (max-width: 768px) {
@@ -1208,6 +1225,9 @@
     padding-left: 0;
     margin-bottom: 10px;
     text-align: left;
+  }
+  .col-search{
+    justify-content: center;
   }
   
   .footer-products li {
@@ -1645,9 +1665,7 @@
     }
 
     .col-search{
-      order: 3;
-      width: 100%;
-      margin-bottom: 50px;
+      display: none !important;
     }
 
     .col-search input{
@@ -1676,5 +1694,10 @@
     }
     #hero{
       background-position: center !important
+    }
+
+    .whatsapp-button {
+      width: 200px;
+      height: 200px;
     }
   }
