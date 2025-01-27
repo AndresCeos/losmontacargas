@@ -79,7 +79,13 @@ body {
 	.header-contact {
 		padding-right: 0px;
 		padding-left: 0px;
+    text-align: center;
 	}
+  .header-contact a{
+    color: white;
+    text-decoration: none;
+	}
+
 
 	#content-html {
 		line-height: 35px;
