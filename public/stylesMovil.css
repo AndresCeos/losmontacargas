@@ -1,0 +1,278 @@
+@media (max-width: 600px){
+    /* parte superior */
+    #contact{
+      font-size: 5px;
+      padding: 10px;
+    }
+    /* logo menu*/
+    .col-logo{
+        width: 50%;
+    }
+    .col-logo .logo{
+        width: 90%;
+    }
+    .col-menu{
+        width: 50%;
+        justify-content: right;
+    }
+    .nav-bar-movil i{
+        font-size: 30px;
+    }
+    .nav-bar-movil{
+        display: block;
+    }
+    .btn-close{
+        font-size: 20px;
+    }
+    .nav-link, .offcanvas-title{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hero */
+    #hero h3, #hero h4{
+        font-size: 25px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .hero-buttons{
+        width: 100% !important;
+    }
+    .hero-buttons a{
+        font-size: 15px !important;
+    }
+
+    /* Products */
+    .product-card, .product-item{
+        width: 100%;
+    }
+    .product-card h3, .product-item h4, .product-item h3{
+        font-size: 25px;
+    }
+    .product-card p, .product-item p{
+        font-size: 20px;
+    }
+    .product-card a, .product-item a{
+        font-size: 20px;
+    }
+    .product-section, .product-section-others{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* titles */
+    h2{
+        font-size: 25px !important;
+    }
+
+    /** Offers */
+    .offer-section{
+        display: flex;
+    }
+    .offer-left{
+        width: 100%;
+    }
+    .offer-left h2{
+        font-size: 25px;
+    }
+    .offer-left p{
+        font-size: 20px !important;
+        line-height: 2rem;
+    }
+    .offer-left li{
+        font-size: 20px;
+        line-height: 1rem;
+    }
+    .offer-left ul{
+        margin-top: 20px;
+    }
+    .offer-right{
+        width: 100% !important;
+    }
+    .social-media span{
+        font-size: 20px;
+    }
+    .social-media a{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .social-media a i{
+        font-size: 10px;
+    }
+    #miFormulario input, #miFormulario label,#miFormulario select,#miFormulario textarea, #miFormulario button{
+        font-size: auto !important;
+    }
+    #miFormulario option{
+        font-size: 15px;
+    }
+    #miFormulario .form-row{
+        flex-direction: column;
+    }
+
+    /* Why RTE */
+    .why-rte p{
+        font-size: 25px;
+    }
+    .brand-logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .brand-logo-content{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Banner */
+    .arrendamiento-banner{
+        height: auto !important;
+    }
+    .arrendamiento-banner .arrendamiento-content{
+        width: 80%;
+        padding: 100px 0px;
+    }
+    .arrendamiento-content p, .arrendamiento-content a{
+        font-size: 20px;
+      }
+
+
+
+    .col-6{
+      width: 100%;
+    }
+    .advantages li{
+      padding-left: 60px;
+    }
+    .video-container{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .video-container img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .product-grid-section h3{
+      font-size: 25px !important;
+    }
+
+    .three-steps p, .forklift-description p,.forklift-description li{
+      font-size: 25px;
+    }
+    .distributor-description{
+        font-size: 20px;
+      }
+      .distributor-image, .forklift-image {
+        flex: 1;
+        }
+    .step-item{
+      max-width: 100%;
+    }
+
+    .reverse-movil{
+      flex-direction: column-reverse;
+    }
+
+    .nav-bar-desktop{
+      display: none;
+    }
+    .nav-bar-movil{
+      display: block;
+    }
+    .nav-conteiner{
+      display: flex;
+      align-items: center;
+    }
+    .nav-conteiner .btn-primary{
+      background-color: #ff1414;
+    }
+    .why-features{
+      flex-direction: column;
+    }
+    .feature-item{
+      width: 100% !important;
+      max-width: 100%;
+    }
+    .feature-icon i{
+      font-size: 80px;
+    }
+
+
+    .footer-about h3{
+      font-size: 25px;
+    }
+    .footer-about p, .footer-about li{
+      font-size: 20px;
+      line-height: 1rem;
+    }
+    .footer-about ul li{
+      padding-left: 20px;
+    }
+    .footer-map h4, .footer-map a{
+      font-size: 20px;
+    }
+    .footer-logos img{
+      width: 40% !important;
+    }
+    .footer-col h4, .footer-col p, .footer-col a{
+      font-size: 20px;
+    }
+
+    .social-media-f span{
+      font-size: 45px;
+    }
+    .social-media-f a{
+      width: 60px !important;
+      height: 60px !important;
+    }
+    .social-media-f a i{
+      font-size: 40px;
+    }
+
+    .footer-col select{
+      font-size: 20px;
+    }
+    .footer-col option{
+      font-size: 15px;
+    }
+    
+    .star-container i{
+      font-size: 30px;
+    }
+
+    #content-html{
+      font-size: 4em;
+      line-height: initial !important;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    #container-header-content{
+      height: auto !important;
+    }
+
+    #container-header-content img{
+      max-width: 500px;
+    }
+
+    .col-search{
+      display: none !important;
+    }
+
+    .col-search input{
+      font-size: 45px;
+      padding: 10px;
+    }
+    .col-search i{
+      font-size: 45px;
+      padding: 10px;
+    }
+    #hero{
+      background-position: center !important
+    }
+
+    .whatsapp-button {
+      width: 60px;
+      height: 60px;
+    }
+  }
