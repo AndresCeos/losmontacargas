@@ -54,29 +54,55 @@ import montacarga2 from "../assets/img/montacarga/2.webp";
 import montacarga3 from "../assets/img/montacarga/3.webp";
 import montacarga4 from "../assets/img/montacarga/4.webp";
 import profeco from "../assets/img/montacarga/profeco.jpg";
+
+import plataformaGenie1 from "../assets/img/genie/plataformaGenie1.jpg";
+import plataformaGenie2 from "../assets/img/genie/plataformaGenie2.jpg";
+import plataformaGenie3 from "../assets/img/genie/plataformaGenie3.webp";
+import plataformaGenie4 from "../assets/img/genie/plataformaGenie4.jpg";
+import plataformaGenie5 from "../assets/img/genie/plataformaGenie5.jpg";
+
+import plataformaJLG1 from "../assets/img/jlg/plataformaJLG1.jpg";
+import plataformaJLG2 from "../assets/img/jlg/plataformaJLG2.jpg";
+import plataformaJLG3 from "../assets/img/jlg/plataformaJLG3.jpg";
+import plataformaJLG4 from "../assets/img/jlg/plataformaJLG4.jpg";
+import plataformaJLG5 from "../assets/img/jlg/plataformaJLG5.jpg";
+
+import fondoPlataforma from "../assets/img/fondoplataforma.jpg";
+
+import articuladas1 from "../assets/img/imgfooter/articuladas1.jpg";
+import articuladas2 from "../assets/img/imgfooter/articuladas2.jpg";
+import tijerasf1 from "../assets/img/imgfooter/tijeras1.jpg";
+import tijerasf2 from "../assets/img/imgfooter/tijeras2.jpg";
 ---
 
 <!-- Sección de productos (del primer ejemplo) -->
 <section class="product-section" id="productos">
-  <div class="product-card">
+  <!--<div class="product-card">
     <img src={DSC0.src} alt="Montacargas" />
     <h3>MONTACARGAS</h3>
     <p>De combustión y eléctricos. De 2 a 10 Ton.</p>
     <a href="https://losmontacargas.mx/product-category/montacargas/" class="btn-vermas">VER MÁS</a>
   </div>
-  <div class="product-card">
+  -->
+  <div class="product-card" style="width: auto;">
     <img src={MontaCargas.src} alt="Plataformas" />
     <h3>PLATAFORMAS</h3>
     <p>Telescópicas y articuladas. Genie, JLG y Sinoboom.</p>
-    <a href="https://losmontacargas.mx/product-category/plataforma-articulada/" class="btn-vermas">VER MÁS</a>
+    <a
+      href="https://losmontacargas.mx/product-category/plataforma-articulada/"
+      class="btn-vermas">VER MÁS</a
+    >
   </div>
-  <div class="product-card">
+  <div class="product-card" style="width: auto;">
     <img src={Tijeras.src} alt="Tijeras" />
     <h3>TIJERAS</h3>
     <p>Plataformas tipo tijera de todas las alturas.</p>
-    <a href="https://losmontacargas.mx/product-category/plataforma-tijera/" class="btn-vermas">VER MÁS</a>
+    <a
+      href="https://losmontacargas.mx/product-category/plataforma-tijera/"
+      class="btn-vermas">VER MÁS</a
+    >
   </div>
-  <div class="product-card">
+  <!--<div class="product-card">
     <img src={Generadores.src} alt="Generadores" />
     <h3>GENERADORES</h3>
     <p>Desde 10 KW - 200 KW, diésel y gas LP.</p>
@@ -88,83 +114,117 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     <p>Minicargadores de 1 a 3 toneladas.</p>
     <a href="https://losmontacargas.mx/product-category/mini-cargadores/" class="btn-vermas">VER MÁS</a>
   </div>
+  -->
 </section>
 
-<!-- NUEVA SECCIÓN: Productos con "Precios<br/>Negociables", texto informativo y formulario -->
-<section class="immediate-delivery">
-  <h2>
-    Venta De Montacargas Con Entrega Inmediata <span>
-      | <a href="https://losmontacargas.mx/entrega-inmediata/">VER MÁS</a></span
+<!-- SECCIÓN: Plataformas Articuladas Precios -->
+<section class="product-grid-section">
+  <h3>
+    Plataformas Articuladas Precios | <a
+      href="https://losmontacargas.mx/product-category/plataforma-articulada/"
+      >VER MÁS</a
     >
-  </h2>
-
-  <!-- Carrusel / fila de productos -->
+  </h3>
   <div class="product-section-others">
-    <!-- Tarjeta 1 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-toyota-5000-lb-8fgu25-gas-lp-semi-nuevo/" class="product-item">
+    <!-- Producto 1 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-usada-electrico-500-lb-genie/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={uno.src} alt="Toyota 5000 lb" />
-      <h3>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Semi Nuevo</h3>
-      <p class="product-price">USD $24,950.00</p>
+      <img src={articulado1.src} alt="Plataforma Genie Eléctrica" />
+      <h4>Plataforma Articulada Genie, Eléctrica, 500 Lb</h4>
+      <p class="product-price">USD $45,950.00</p>
     </a>
-    <!-- Tarjeta 2 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-hando-gas-lp-5500-lb-lg25-nuevo/" class="product-item">
+    <!-- Producto 2 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-sinoboom-ab10erjn-electrica-500-lb-12-metros-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={dos.src} alt="Hando Gas LP Dual 5500 lb" />
-      <h3>Montacargas Hando Gas LP Dual 5500 LB HN25GL Nuevo</h3>
-      <p class="product-price">USD $22,950.00</p>
+      <img src={articulado2.src} alt="Plataforma Sinoboom 12m" />
+      <h4>
+        Plataforma Articulada SINOBOOM AB10ERJ Eléctrica, 500 Lb 12 Metros Nueva
+      </h4>
+      <p class="product-price">USD $57,950.00</p>
     </a>
-    <!-- Tarjeta 3 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-lonking-gas-lp-dual-5500-lb-lg25-nuevo/" class="product-item">
+    <!-- Producto 3 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-sinoboom-electrica-500-lb-16-metros-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={tres.src} alt="Lonking Gas LP" />
-      <h3>Montacargas Lonking Gas LP Dual 5500 LB LG25 Nuevo</h3>
-      <p class="product-price">USD $23,950.00</p>
+      <img src={articulado3.src} alt="Plataforma Sinoboom 16m" />
+      <h4>
+        Plataforma Articulada SINOBOOM AB14EJ Eléctrica, 500 Lb 16 Metros Nueva
+      </h4>
+      <p class="product-price">USD $64,950.00</p>
     </a>
-    <!-- Tarjeta 4 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-lonking-7500-lb-lg35glt-dualgasolina-lp-6/" class="product-item">
+    <!-- Producto 4 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-zoomlion-za14j-electrica-14-metros-500-lb-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={cuatro.src} alt="Hando 8000 lb" />
-      <h3>Montacargas Hando Gas LP 3.5 Ton L3G35GLT Gas Dual Nuevo</h3>
-      <p class="product-price">USD $27,950.00</p>
+      <img src={articulado4.src} alt="Plataforma Zoomlion ZA14J" />
+      <h4>
+        Plataforma Articulada Zoomlion ZA14J Eléctrica, 14 Metros, 500 Lb Nueva
+      </h4>
+      <p class="product-price">USD $64,950.00</p>
     </a>
-    <!-- Tarjeta 5 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-lonking-electrico-5500-lb-cpd25-nuevo/" class="product-item">
+    <!-- Producto 5 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-genie-z45-25-electrica-500-lb-12-5m-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={cinco.src} alt="Lonking Eléctrico" />
-      <h3>Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo</h3>
-      <p class="product-price">USD $29,950.00</p>
+      <img src={articulado5.src} alt="Plataforma Genie 12.5m" />
+      <h4>
+        Plataforma Articulada GENIE Z34/22, Eléctrica, 500 Lb (12.5m) Nueva
+      </h4>
+      <p class="product-price">USD $62,950.00</p>
     </a>
   </div>
 </section>
 
 <!-- SECCIÓN: Texto de venta + formulario lateral + video -->
-<section class="offer-section" id="marcas">
+<section class="offer-section" id="tipos">
   <div class="offer-left">
-    <h2><b>Venta De Montacargas Nuevos y Usados</b></h2>
-    <p>
-      Los Montacargas RTE es una empresa líder nacional en la
-      <strong
-        >venta de montacargas usados, seminuevos y nuevos garantizados.</strong
-      >
-      Todos los equipos semi nuevos son importados legalmente de Estados Unidos (U.S.A.)
-      y estuvieron bajo estrictos programas de mantenimiento preventivo.
-    </p>
-
-    <p>
-      <strong>Marcas Disponibles:</strong> Toyota, Caterpillar, Heli, Clark, Yale,
-      Hyster, Mitsubishi, Nissan, Unicarriers, Crown, Raymond, Hyundai, Lonking.<br
-      />
-      <a href="#" class="btn-catalog">[+] Ver Catálogo</a>
-    </p>
-
-    <ul class="advantages">
-      <li>Garantía de 6 meses</li>
-      <li>Precios negociables en montacargas</li>
-      <li>Conseguimos cualquier equipo o refacción</li>
-      <li>Importamos el montacargas por usted</li>
+    <h2><b>Venta De Plataformas Precios</b></h2>
+    <ul>
+      <li>
+        <h2><b>Plataformas Articuladas</b></h2>
+        <p>
+          Las plataformas articuladas son una herramienta valiosa en la
+          industria de la construcción, la limpieza y el mantenimiento de
+          edificios, entre otras aplicaciones.
+        </p>
+        <p>
+          Estas plataformas <strong
+            >están diseñadas para proporcionar acceso seguro a áreas elevadas</strong
+          > y de difícil acceso, lo que permite a los trabajadores realizar su trabajo
+          de manera eficiente y efectiva.
+        </p>
+      </li>
+      <li>
+        <h2><b>Plataformas Tipo Tijera</b></h2>
+        <p>
+          <strong>Las plataformas tipo tijera</strong> son un tipo de equipo de elevación
+          utilizado en diversas aplicaciones, como la construcción, la instalación
+          de sistemas de aire acondicionado y la limpieza de edificios.
+        </p>
+        <p>
+          En Los Montacargas RTE <strong
+            >vendemos plataformas tipo tijera</strong
+          > de todas las capacidades.
+        </p>
+        <p>
+          Las plataformas tipo tijera tienen una amplia base y una plataforma de
+          trabajo que se eleva y desciende verticalmente con la ayuda de un
+          sistema hidráulico.
+        </p>
+      </li>
     </ul>
-
     <!-- Video de YouTube (ejemplo) -->
     <div class="video-container">
       <a href="https://www.youtube.com/watch?v=Hnxjj7Cu8f0" target="_blank">
@@ -181,11 +241,29 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
   <div class="offer-right" id="contacto">
     <div class="social-media">
       <span>Síguenos:</span>
-      <a href="https://www.facebook.com/losmontacargas.mx" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/losmontacargas/" class="instagram" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@LosMontacargas?themeRefresh=1" class="youtube" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/in/rte-de-mexico-b87064a9?originalSubdomain=mx" class="linkedin" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://vimeo.com/350113615" class="vimeo" target="_blank" ><i class="fa-brands fa-vimeo"></i></a>
+      <a
+        href="https://www.facebook.com/losmontacargas.mx"
+        target="_blank"
+        class="facebook"><i class="fa-brands fa-facebook"></i></a
+      >
+      <a
+        href="https://www.instagram.com/losmontacargas/"
+        class="instagram"
+        target="_blank"><i class="fa-brands fa-instagram"></i></a
+      >
+      <a
+        href="https://www.youtube.com/@LosMontacargas?themeRefresh=1"
+        class="youtube"
+        target="_blank"><i class="fa-brands fa-youtube"></i></a
+      >
+      <a
+        href="https://www.linkedin.com/in/rte-de-mexico-b87064a9?originalSubdomain=mx"
+        class="linkedin"
+        target="_blank"><i class="fa-brands fa-linkedin"></i></a
+      >
+      <a href="https://vimeo.com/350113615" class="vimeo" target="_blank"
+        ><i class="fa-brands fa-vimeo"></i></a
+      >
     </div>
 
     <!-- Formulario de contacto/cotización -->
@@ -193,7 +271,13 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       <div class="form-row">
         <div class="form-group">
           <label>Nombre *</label>
-          <input type="text" id="from_name" name="from_name" placeholder="Nombre..." required />
+          <input
+            type="text"
+            id="from_name"
+            name="from_name"
+            placeholder="Nombre..."
+            required
+          />
         </div>
         <div class="form-group">
           <label>Correo electrónico *</label>
@@ -210,7 +294,13 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       <div class="form-row">
         <div class="form-group">
           <label>Whatsapp *</label>
-          <input id="from_phone" name="from_phone" type="text" placeholder="Clave lada y número..." required />
+          <input
+            id="from_phone"
+            name="from_phone"
+            type="text"
+            placeholder="Clave lada y número..."
+            required
+          />
         </div>
         <div class="form-group">
           <label>¿Cómo nos contactaste?</label>
@@ -339,183 +429,152 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
   <div id="background-overlay"></div>
   <div class="arrendamiento-content">
     <h2>COMPRA CON ARRENDAMIENTO Y CRÉDITO</h2>
-    <p>PAGA TU MONTACARGAS A PAGOS MENSUALES CON CRÉDITO</p>
-    <a href="https://losmontacargas.mx/catalogo/?filter_marca=lonking" class="btn-comprar-ahora">COMPRAR AHORA</a>
+    <p>PAGA TU PLATAFORMA A PAGOS MENSUALES CON CRÉDITO</p>
+    <a
+      href="https://losmontacargas.mx/catalogo/?filter_tipo=plataforma-articulada"
+      class="btn-comprar-ahora">COMPRAR AHORA</a
+    >
   </div>
 </section>
 
 <!-- SECCIÓN: Montacargas Toyota Precios -->
 <section class="product-grid-section">
   <h3>
-    Montacargas Toyota Precios | <a href="https://losmontacargas.mx/catalogo/">VER MÁS</a>
+    Plataformas Articuladas Genie | <a
+      href="https://losmontacargas.mx/product-category/plataformas/">VER MÁS</a
+    >
   </h3>
   <div class="product-section-others">
     <!-- Producto 1 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-toyota-5000-lb-8fgu25-gas-lp-semi-nuevo/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-usada-electrico-500-lb-genie/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={toyota1.src} alt="Toyota 5000 Lb Semi Nuevo" />
-      <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Semi Nuevo</h4>
+      <img src={plataformaGenie1.src} alt="Toyota 5000 Lb Semi Nuevo" />
+      <h4>Plataforma Articulada Genie, Electrico, 500 Lb, Usada</h4>
       <p class="product-price">USD $24,950.00</p>
     </a>
     <!-- Producto 2 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-toyota-5000-lb-8fgu25-gas-lp-nuevo-2/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-usada-electrico-500-lb-genie-8/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={toyota2.src} alt="Toyota 5000 Lb Nuevo" />
-      <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP, Nuevo</h4>
+      <img src={plataformaGenie2.src} alt="Toyota 5000 Lb Nuevo" />
+      <h4>Plataforma Articulada Usada, Electrico, 500 Lb, Genie</h4>
       <p class="product-price">USD $39,950.00</p>
     </a>
     <!-- Producto 3 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-toyota-5000-lb-8fgu25-gas-lp-nuevo/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-genie-electrica-gs3246-12m-500-lb-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={toyota3.src} alt="Toyota 5000 Lb Dual Gas" />
-      <h4>Montacargas Toyota 5000 Lb 8FGU25 Dual Gas Nuevo</h4>
+      <img src={plataformaGenie3.src} alt="Toyota 5000 Lb Dual Gas" />
+      <h4>Plataforma Tijera Genie Eléctrica GS3246 (12m) 500 Lb Nueva</h4>
       <p class="product-price">USD $25,950.00</p>
     </a>
     <!-- Producto 4 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-toyota-5000-lb-8fgu25-dualgasolina-lp-11/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-genie-z45-25-electrica-500-lb-12-5m-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={toyota4.src} alt="Toyota 5000 Lb Gas LP" />
-      <h4>Montacargas Toyota 5000 Lb 8FGU25 Gas LP Nuevo</h4>
+      <img src={plataformaGenie4.src} alt="Toyota 5000 Lb Gas LP" />
+      <h4>
+        Plataforma Articulada GENIE Z34/22, Eléctrica, 500 Lb (12.5m) Nueva
+      </h4>
       <p class="product-price">USD $39,950.00</p>
     </a>
     <!-- Producto 5 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-toyota-5000-lb-8fgu25-gas-lp-4/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-genie-z45-25-electrica-500-lb-14m-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={toyota5.src} alt="Toyota 5000 Lb Dual (Gasolina/LP)" />
-      <h4>Montacargas Toyota 5000 Lb 8FGU25 DUAL(GASOLINA/LP) Semi Nueva</h4>
+      <img src={plataformaGenie5.src} alt="Toyota 5000 Lb Dual (Gasolina/LP)" />
+      <h4>Plataforma Articulada GENIE Z45/25, Eléctrica, 500 Lb (14m) Nueva</h4>
       <p class="product-price">USD $28,950.00</p>
     </a>
   </div>
 </section>
+<section class="immediate-delivery">
+  <h2>
+    Plataformas Articuladas JLG <span>
+      | <a href="https://losmontacargas.mx/product-category/plataformas/">VER MÁS</a></span
+    >
+  </h2>
 
-<!-- SECCIÓN: Plataformas Articuladas Precios -->
-<section class="product-grid-section">
-  <h3>
-    Plataformas Articuladas Precios | <a href="https://losmontacargas.mx/product-category/plataforma-articulada/">VER MÁS</a>
-  </h3>
+  <!-- Carrusel / fila de productos -->
   <div class="product-section-others">
-    <!-- Producto 1 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-articulada-usada-electrico-500-lb-genie/" class="product-item wide">
+    <!-- Tarjeta 1 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-usada-electrico-750-lb-jlg/"
+      class="product-item"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={articulado1.src} alt="Plataforma Genie Eléctrica" />
-      <h4>Plataforma Articulada Genie, Eléctrica, 500 Lb</h4>
-      <p class="product-price">USD $45,950.00</p>
+      <img src={plataformaJLG1.src} alt="Toyota 5000 lb" />
+      <h3>Plataforma Tijera Usada, Electrico, 750 Lb, Jlg</h3>
+      <p class="product-price">USD $24,950.00</p>
     </a>
-    <!-- Producto 2 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-articulada-sinoboom-ab10erjn-electrica-500-lb-12-metros-nueva/" class="product-item wide">
+    <!-- Tarjeta 2 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-jlg-electrica-500-lb-usada-copia/"
+      class="product-item"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={articulado2.src} alt="Plataforma Sinoboom 12m" />
-      <h4>
-        Plataforma Articulada SINOBOOM AB10ERJ Eléctrica, 500 Lb 12 Metros Nueva
-      </h4>
-      <p class="product-price">USD $57,950.00</p>
+      <img src={plataformaJLG2.src} alt="Hando Gas LP Dual 5500 lb" />
+      <h3>Plataforma Articulada Genie E400AJP Eléctrica 500 Lb, Usada</h3>
+      <p class="product-price">USD $22,950.00</p>
     </a>
-    <!-- Producto 3 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-articulada-sinoboom-electrica-500-lb-16-metros-nueva/" class="product-item wide">
+    <!-- Tarjeta 3 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-jlg-electrica-500-lb-usada/"
+      class="product-item"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={articulado3.src} alt="Plataforma Sinoboom 16m" />
-      <h4>
-        Plataforma Articulada SINOBOOM AB14EJ Eléctrica, 500 Lb 16 Metros Nueva
-      </h4>
-      <p class="product-price">USD $64,950.00</p>
+      <img src={plataformaJLG3.src} alt="Lonking Gas LP" />
+      <h3>Plataforma Articulada JLG, Eléctrica, 500 Lb, Usada</h3>
+      <p class="product-price">USD $23,950.00</p>
     </a>
-    <!-- Producto 4 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-articulada-zoomlion-za14j-electrica-14-metros-500-lb-nueva/" class="product-item wide">
+    <!-- Tarjeta 4 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-telescopica-usada-3/"
+      class="product-item"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={articulado4.src} alt="Plataforma Zoomlion ZA14J" />
-      <h4>
-        Plataforma Articulada Zoomlion ZA14J Eléctrica, 14 Metros, 500 Lb Nueva
-      </h4>
-      <p class="product-price">USD $64,950.00</p>
+      <img src={plataformaJLG4.src} alt="Hando 8000 lb" />
+      <h3>Plataforma Telescopica JLG 12 Metros Usada</h3>
+      <p class="product-price">USD $27,950.00</p>
     </a>
-    <!-- Producto 5 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-articulada-genie-z45-25-electrica-500-lb-12-5m-nueva/" class="product-item wide">
+    <!-- Tarjeta 5 -->
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-articulada-usada-electrico-500-lb-jlg-4/"
+      class="product-item"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
-      <img src={articulado5.src} alt="Plataforma Genie 12.5m" />
-      <h4>
-        Plataforma Articulada GENIE Z34/22, Eléctrica, 500 Lb (12.5m) Nueva
-      </h4>
-      <p class="product-price">USD $62,950.00</p>
-    </div>
-  </a>
-</section>
-<!-- SECCIÓN: Montacargas Eléctricos Precios -->
-<section class="product-grid-section">
-  <h3>
-    Montacargas Eléctricos Precios | <a href="https://losmontacargas.mx/product-category/electricos/">VER MÁS</a>
-  </h3>
-  <div class="product-section-others">
-    <!-- Producto 1 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-lonking-electrico-5500-lb-cpd25-nuevo/" class="product-item wide">
-      <div class="negociable-badge">Precios<br />Negociables</div>
-      <img
-        src={electricos1.src}
-        alt="Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo"
-      />
-      <h4>Montacargas Lonking Eléctrico 5500 LB CPD25 Nuevo</h4>
+      <img src={plataformaJLG5.src} alt="Lonking Eléctrico" />
+      <h3>Plataforma Articulada Usada, Electrico, 500 Lb, Jlg</h3>
       <p class="product-price">USD $29,950.00</p>
     </a>
-
-    <!-- Producto 2 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-hyundai-electrico-5000-lb-25bh-9-nuevo/" class="product-item wide">
-      <div class="negociable-badge">Precios<br />Negociables</div>
-      <img
-        src={electricos2.src}
-        alt="Montacargas Hyundai Eléctrico 5000 LB, 25BE-X Nuevo"
-      />
-      <h4>Montacargas Hyundai Eléctrico 5000 LB, 25BE-X Nuevo</h4>
-      <p class="product-price">USD $45,950.00</p>
-    </a>
-
-    <!-- Producto 3 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-hombre-parado-doble-reach-ltmg-frb20d-2-toneladas-electrico-6m-nuevo/" class="product-item wide">
-      <div class="negociable-badge">Precios<br />Negociables</div>
-      <img
-        src={electricos3.src}
-        alt="Montacargas Hombre Parado Doble Reach LTMG FRB20D"
-      />
-      <h4>
-        Montacargas Hombre Parado Doble Reach, LTMG FRB20D, 2 Toneladas,
-        Eléctrico (6m) Nuevo
-      </h4>
-      <p class="product-price">USD $38,950.00</p>
-    </a>
-
-    <!-- Producto 4 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-hombre-parado-ltmg-frb20s-2-toneladas-electrico-6m-nuevo/" class="product-item wide">
-      <div class="negociable-badge">Precios<br />Negociables</div>
-      <img
-        src={electricos4.src}
-        alt="Montacargas Hombre Parado Reach Sencillo LTMG FRB20S"
-      />
-      <h4>
-        Montacargas Hombre Parado Reach Sencillo, LTMG FRB20S, 2 Ton, Eléctrico
-        (6m) Nuevo
-      </h4>
-      <p class="product-price">USD $34,950.00</p>
-    </a>
-
-    <!-- Producto 5 -->
-    <a href="https://losmontacargas.mx/producto/montacargas-lonking-6500-lb-lg30b-electrico/" class="product-item wide">
-      <div class="negociable-badge">Precios<br />Negociables</div>
-      <img
-        src={electricos5.src}
-        alt="Montacargas Lonking 6500 Lb 3 Toneladas LG30B Eléctrico"
-      />
-      <h4>Montacargas Lonking 6500 Lb 3 Toneladas LG30B Eléctrico Nuevo</h4>
-      <p class="product-price">USD $34,950.00</p>
-    </div>
-  </a>
+  </div>
 </section>
 
 <!-- SECCIÓN: Plataformas Tipo Tijera Precios -->
 <section class="product-grid-section">
   <h3>
-    Plataformas Tipo Tijera Precios | <a href="https://losmontacargas.mx/product-category/plataforma-tijera/">VER MÁS</a>
+    Plataformas Tipo Tijera Precios | <a
+      href="https://losmontacargas.mx/product-category/plataforma-tijera/"
+      >VER MÁS</a
+    >
   </h3>
   <div class="product-section-others">
     <!-- Producto 1 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-tijera-sinoboom-electrica-0808s-10-metros-500-lb-nueva/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-sinoboom-electrica-0808s-10-metros-500-lb-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
       <img
         src={tijeras1.src}
@@ -526,7 +585,10 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     </a>
 
     <!-- Producto 2 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-tijera-sinoboom-electrica-gtjz0808-500-lb/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-sinoboom-electrica-gtjz0808-500-lb/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
       <img src={tijeras2.src} alt="Plataforma Tijera Sinoboom Eléctrica 8m" />
       <h4>Plataforma Tijera Sinoboom Eléctrica (8m) GTJZ0808, 500 Lb Nueva</h4>
@@ -534,7 +596,10 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     </a>
 
     <!-- Producto 3 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-tijera-genie-electrica-gs3246-12m-500-lb-nueva/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-genie-electrica-gs3246-12m-500-lb-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
       <img src={tijeras3.src} alt="Plataforma Tijera Genie Eléctrica GS3246" />
       <h4>Plataforma Tijera Genie Eléctrica GS3246 (12m) 500 Lb Nueva</h4>
@@ -542,7 +607,10 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     </a>
 
     <!-- Producto 4 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-tijera-heli-electrica-js0607e-6m-750-lb-nueva/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-heli-electrica-js0607e-6m-750-lb-nueva/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
       <img src={tijeras4.src} alt="Plataforma Tijera Heli JS0607E" />
       <h4>Plataforma Tijera Heli Eléctrica JS0607E (6m) 750 Lb Nueva</h4>
@@ -550,7 +618,10 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     </a>
 
     <!-- Producto 5 -->
-    <a href="https://losmontacargas.mx/producto/plataforma-tijera-usada-dual-2500-lb-genie/" class="product-item wide">
+    <a
+      href="https://losmontacargas.mx/producto/plataforma-tijera-usada-dual-2500-lb-genie/"
+      class="product-item wide"
+    >
       <div class="negociable-badge">Precios<br />Negociables</div>
       <img src={tijeras5.src} alt="Plataforma Tijera Usada Dual Genie" />
       <h4>Plataforma Tijera Usada, Dual, 2500 Lb, Genie</h4>
@@ -559,10 +630,10 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
   </div>
   <!-- SECCIÓN: COMPRA TU MONTACARGAS EN 3 PASOS -->
   <section class="three-steps">
-    <h2>Compra Tu Montacargas En 3 Pasos</h2>
+    <h2>Compra Tu Plataforma En 3 Pasos</h2>
     <p>
       En <strong>MONTACARGAS RTE</strong> somos un grupo de expertos en la asesoría
-      y venta de montacargas. <br />
+      y venta de Plataformas. <br />
       Contáctanos o cotiza en línea.
       <strong>Envío En 24 Horas.</strong>
     </p>
@@ -577,7 +648,7 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
         />
         <h3>Haz una cita y ve tu equipo por videollamada</h3>
         <p>
-          Encuentra el montacargas de tus sueños y haz una cita para que lo
+          Encuentra la plataforma de tus sueños y haz una cita para que lo
           puedas ver por videollamada.
         </p>
       </div>
@@ -593,12 +664,13 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       <!-- Paso 3 -->
       <div class="step-item">
         <img
-          src={compra3.src}
-          alt="Montacargas Nuevos y Seminuevos Certificados"
+          src={plataformaGenie1.src}
+          alt="Plataformas Nuevas y Seminuevas Certificadas"
+          style="height: 55%;"
         />
-        <h3>Montacargas Nuevos y Seminuevos Certificados</h3>
+        <h3>Plataformas Nuevas y Seminuevas Certificadas</h3>
         <p>
-          Todos los montacargas son inspeccionados y pasan por más de 30
+          Todos las plataformas son inspeccionadas y pasan por más de 30
           revisiones, son restaurados para quedar como nuevos.
         </p>
       </div>
@@ -608,130 +680,133 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
 <!-- SECCIÓN: MONTACARGAS MÉXICO (BANNER) -->
 <section
   class="arrendamiento-banner"
-  style={`background-image: url(${portadaMexico.src});`}
+  style={`background-image: url(${fondoPlataforma.src});`}
 >
   <div id="background-overlay"></div>
   <div class="arrendamiento-content">
     <h2>Montacargas MÉXICO</h2>
     <p>los mejores precio EN MONTACARGAS EN MÉXICO</p>
-    <a href="https://losmontacargas.mx/entrega-inmediata/" class="btn-comprar-ahora">COMPRAR AHORA</a>
+    <a
+      href="https://losmontacargas.mx/plataformas-articuladas/"
+      class="btn-comprar-ahora">COMPRAR AHORA</a
+    >
   </div>
 </section>
-<section class="product-grid-section" id="libras">
-  <!-- SECCIÓN: Montacargas Combustión y Montacargas Eléctricos -->
+
+<section class="product-grid-section" id="queson">
   <section class="forklift-section">
-    <!-- Bloque 1: Montacargas de Combustión Interna -->
     <div class="forklift-info-block">
       <div class="forklift-image">
-        <!-- Ajusta la ruta y nombre del archivo de imagen -->
         <img
-          src={montacarga1.src}
+          src={articuladas1.src}
           alt="Montacargas Hando de combustión interna"
         />
       </div>
       <div class="forklift-description">
-        <h3>Montacargas De Combustión Interna De Gas LP En Hombre Sentado</h3>
+        <h3>¿Qué son las plataformas articuladas?</h3>
         <p>
-          <strong>Montacargas de combustión interna:</strong> 5,000 Lb a 30,000 Lb.<br
-          />
-          <strong>Combustible:</strong> Gas LP, Gasolina, Diésel.<br />
-          <strong>Capacidades:</strong> 2.5, 3, 3.5, 5, 7, 10, 15, 20 Toneladas.
+          Las plataformas articuladas son dispositivos de elevación que se
+          utilizan para acceder a áreas elevadas y de difícil acceso. Estas
+          plataformas están diseñadas para ser estables y seguras, lo que
+          permite a los trabajadores realizar trabajos en altura de manera más
+          eficiente y efectiva.
         </p>
-        <ul>
-          <li>
-            Conseguimos el montacargas que necesitas a los mejores precios en
-            subastas.
-          </li>
-          <li>Tenemos más de 200 montacargas en entrega inmediata.</li>
-          <li>Somos distribuidores de las marcas más buscadas en México.</li>
-        </ul>
+        <p>
+          Las plataformas articuladas son extremadamente versátiles y se pueden
+          utilizar para diferentes aplicaciones, como la construcción, la
+          limpieza de edificios, el mantenimiento de carreteras y puentes, la
+          instalación de señalización, la inspección y reparación de torres y el
+          mantenimiento de parques solares.
+        </p>
       </div>
     </div>
-    <!-- Separador visual (opcional) -->
+
     <hr />
 
-    <!-- Bloque 2: Montacargas Eléctricos con Batería de Litio -->
     <div class="forklift-info-block reverse-movil">
       <div class="forklift-description">
-        <h3>Montacargas Eléctricos Con Batería De Litio En Hombre Sentado</h3>
+        <h3>¿Cómo funcionan las plataformas articuladas?</h3>
         <p>
-          <strong>Montacargas eléctricos:</strong> 2,000 Lb a 15,000 Lb.<br />
-          <strong>Tipos de batería:</strong> Estándar (Plomo-Ácido), Ion-Litio.<br
-          />
-          <strong>Capacidades:</strong> 2.5, 3, 3.5, 5, 7, 10, 15, 20 Toneladas.
+          Las plataformas articuladas funcionan mediante el uso de un sistema de
+          brazos articulados que se extienden desde la base de la plataforma
+          hasta la cesta en la parte superior. Los brazos articulados permiten
+          que la plataforma se eleve y se extienda horizontalmente, lo que
+          permite a los trabajadores acceder a áreas que de otra manera serían
+          inaccesibles.
         </p>
-        <ul>
-          <li>
-            Los montacargas eléctricos nuevos incluyen cargador de carga rápida
-            (2 horas).
-          </li>
-          <li>Tienen un precio en descuento de: $29,950 USD + IVA.</li>
-          <li>
-            Cuentan con mástil triple, llantas sólidas y desplazador lateral.
-          </li>
-        </ul>
+        <p>
+          Las plataformas articuladas también están equipadas con un sistema de
+          control que permite al operador ajustar la altura y la posición de la
+          plataforma con precisión.
+        </p>
       </div>
       <div class="forklift-image">
         <!-- Ajusta la ruta y nombre del archivo de imagen -->
         <img
-          src={montacarga2.src}
+          src={articuladas2.src}
           alt="Montacargas Eléctrico Hando con batería de litio"
         />
       </div>
     </div>
   </section>
-  <!-- SECCIÓN: Distribuidores HANDO y Porqué Comprar -->
   <section class="distributor-section">
-    <!-- Bloque 1: Imagen izquierda, texto derecha -->
     <div class="distributor-block">
       <div class="distributor-image">
-        <img src={montacarga3.src} alt="Montacargas Hando Combustión Interna" />
+        <img src={tijerasf1.src} alt="Montacargas Hando Combustión Interna" />
       </div>
       <div class="distributor-description">
-        <h3>Distribuidores De Montacargas HANDO</h3>
+        <h3>Características de las plataformas tipo tijera</h3>
         <p>
-          Somos <strong>distribuidores nacionales</strong> de la marca Hando, uno
-          de los <em>top 3 fabricantes más grandes</em> de montacargas en Asia. Hando
-          es una empresa de máximo prestigio y calidad, tenemos el inventario más
-          grande en el país.
+          Las plataformas tipo tijera están diseñadas para proporcionar acceso
+          seguro a áreas elevadas y de difícil acceso. A diferencia de las
+          plataformas articuladas, las plataformas tipo tijera se mueven
+          verticalmente, lo que las hace más adecuadas para trabajos que
+          requieren acceso a una sola ubicación elevada.
         </p>
         <p>
-          <strong>Brochure Lonking:</strong>
-          <a href="https://losmontacargas.mx/wp-content/uploads/2025/01/Hando.pdf" target="_blank">Brochure</a>
+          Estas plataformas tienen una base amplia y estable que las hace más
+          seguras y estables que otros tipos de equipos de elevación.
         </p>
-        <ul>
-          <li>1 año de garantía</li>
-          <li>Todas las capacidades (Eléctricos y Gas Dual)</li>
-          <li>Cuentan con motor Nissan K25</li>
-        </ul>
+        <p>
+          Las plataformas tipo tijera <strong
+            >están disponibles en una variedad de tamaños y alturas de elevación</strong
+          >. Algunas plataformas tipo tijera pueden elevarse a alturas
+          superiores a 18 metros, lo que las hace ideales para trabajos de
+          construcción o para la instalación de sistemas de aire acondicionado
+          en edificios de varios pisos.
+        </p>
+        <p>
+          Las plataformas tipo tijera están diseñadas para ser operadas por una
+          persona, y la plataforma de trabajo generalmente puede acomodar hasta
+          dos personas y herramientas. Algunas plataformas tipo tijera también
+          tienen características adicionales, como plataformas giratorias o
+          extensiones de plataforma, que aumentan su versatilidad.
+        </p>
       </div>
     </div>
 
-    <!-- Separador horizontal (opcional) -->
     <hr />
 
-    <!-- Bloque 2: Texto a la izquierda, imagen a la derecha -->
     <div class="distributor-block reverse-movil">
       <div class="distributor-description">
-        <h3>Porque Comprar Con Los Montacargas?</h3>
+        <h3>Aplicaciones de las plataformas tipo tijera</h3>
         <p>
-          <strong>Comprar con una empresa confiable</strong>, que da garantía, y
-          solo vende productos de máxima calidad; es mejor decisión que comprar
-          con vendedores desconocidos.
+          Las plataformas tipo tijera tienen diversas aplicaciones en la industria de la construcción, la limpieza y el mantenimiento de edificios, entre otras. Algunas de las aplicaciones más comunes de las plataformas tipo tijera son las siguientes:
         </p>
-        <p>
-          <strong>Queremos ganarnos su confianza</strong> y que podamos ser parte
-          de su empresa. Tenemos convenios con las distribuidoras más grandes de
-          México y conseguimos cualquier montacargas.
-        </p>
-
-        <!-- Logos (ejemplo) -->
-        <div class="logos-row">
-          <img src={profeco.src} alt="PROFECO" style="width: 40% !important;" />
-        </div>
+        <ol>
+          <li>
+            <strong>Construcción:</strong> Las plataformas tipo tijera son útiles en la construcción para trabajos en altura, como la instalación de techos o el revestimiento de paredes. Las plataformas tipo tijera pueden elevar a los trabajadores y las herramientas a alturas de trabajo seguras, lo que les permite trabajar de manera más eficiente y efectiva.
+          </li>
+          <li>
+            <strong>Instalación de sistemas de aire acondicionado:</strong> Las plataformas tipo tijera son ideales para la instalación de sistemas de aire acondicionado en edificios de varios pisos. Las plataformas tipo tijera pueden elevar a los trabajadores y el equipo a las ubicaciones de instalación de manera segura y eficiente.
+          </li>
+          <li>
+            <strong>Limpieza y mantenimiento de edificios:</strong> Las plataformas tipo tijera son útiles para la limpieza y mantenimiento de edificios, como la limpieza de ventanas o la reparación de techos. Las plataformas tipo tijera permiten a los trabajadores llegar a áreas elevadas de manera segura y eficiente.
+          </li>
+        </ol>
       </div>
       <div class="distributor-image">
-        <img src={montacarga4.src} alt="Montacargas RTE" />
+        <img src={tijerasf2.src} alt="Montacargas RTE" />
       </div>
     </div>
   </section>
@@ -763,7 +838,11 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
     <!-- Lado Derecho: Mapa de Google y redes -->
     <div class="footer-map">
       <h4>Los Montacargas RTE en GoogleMaps</h4>
-      <a href="https://maps.app.goo.gl/rx4uvw1f3rVYnEMP9" target="_blank" class="map-link">Abrir en Google Maps:</a>
+      <a
+        href="https://maps.app.goo.gl/rx4uvw1f3rVYnEMP9"
+        target="_blank"
+        class="map-link">Abrir en Google Maps:</a
+      >
       <!-- Ejemplo de iframe de Google Maps -->
       <div class="map-container">
         <iframe
@@ -776,11 +855,29 @@ import profeco from "../assets/img/montacarga/profeco.jpg";
       </div>
       <div class="social-media">
         <span>Síguenos:</span>
-        <a href="https://www.facebook.com/losmontacargas.mx" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/losmontacargas/" class="instagram" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@LosMontacargas?themeRefresh=1" class="youtube" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/in/rte-de-mexico-b87064a9?originalSubdomain=mx" class="linkedin" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://vimeo.com/350113615" class="vimeo" target="_blank" ><i class="fa-brands fa-vimeo"></i></a>
+        <a
+          href="https://www.facebook.com/losmontacargas.mx"
+          target="_blank"
+          class="facebook"><i class="fa-brands fa-facebook"></i></a
+        >
+        <a
+          href="https://www.instagram.com/losmontacargas/"
+          class="instagram"
+          target="_blank"><i class="fa-brands fa-instagram"></i></a
+        >
+        <a
+          href="https://www.youtube.com/@LosMontacargas?themeRefresh=1"
+          class="youtube"
+          target="_blank"><i class="fa-brands fa-youtube"></i></a
+        >
+        <a
+          href="https://www.linkedin.com/in/rte-de-mexico-b87064a9?originalSubdomain=mx"
+          class="linkedin"
+          target="_blank"><i class="fa-brands fa-linkedin"></i></a
+        >
+        <a href="https://vimeo.com/350113615" class="vimeo" target="_blank"
+          ><i class="fa-brands fa-vimeo"></i></a
+        >
       </div>
     </div>
   </div>
