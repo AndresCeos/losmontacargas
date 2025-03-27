@@ -35,15 +35,17 @@ import Whatsapp from "../components/Whatsapp.astro";
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="stylesMovil.css" />
 		<script is:inline src="https://cdn.emailjs.com/dist/email.min.js"></script>
-		<!-- Google tag (gtag.js) -->
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-JQZ6LGMX18"></script>
+
+		//analitics
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-PKS6WK3XLJ"></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
+			function gtag() {
+			  dataLayer.push(arguments);
+			}
 			gtag('js', new Date());
-
-			gtag('config', 'G-JQZ6LGMX18');
-		</script>
+			gtag('config', 'G-PKS6WK3XLJ');
+		  </script>
 	</head>
 	<body>
 		<Header />
